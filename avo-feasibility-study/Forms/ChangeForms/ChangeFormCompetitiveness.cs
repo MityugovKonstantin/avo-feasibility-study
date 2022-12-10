@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace avo_feasibility_study
+namespace avo_feasibility_study.Forms.ChangeForms
 {
-    public partial class Form1 : Form
+    public partial class ChangeFormCompetitiveness : Form
     {
-        public Form1()
+        public ChangeFormCompetitiveness()
         {
             InitializeComponent();
         }
