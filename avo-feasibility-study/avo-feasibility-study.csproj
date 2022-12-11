@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddForms\AddFormCompetitiveness.cs">
+    <Compile Include="Forms\FormCompetitiveness.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddForms\AddFormCompetitiveness.Designer.cs">
-      <DependentUpon>AddFormCompetitiveness.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ChangeForms\ChangeFormCompetitiveness.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ChangeForms\ChangeFormCompetitiveness.Designer.cs">
-      <DependentUpon>ChangeFormCompetitiveness.cs</DependentUpon>
+    <Compile Include="Forms\FormCompetitiveness.Designer.cs">
+      <DependentUpon>FormCompetitiveness.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -64,10 +58,16 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Competitiveness.cs" />
+    <Compile Include="Models\ChangeCompetitveness.cs" />
+    <Compile Include="Presenter.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormCompetitiveness.resx">
+      <DependentUpon>FormCompetitiveness.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
