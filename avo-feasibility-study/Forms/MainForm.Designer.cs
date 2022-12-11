@@ -30,9 +30,10 @@
         {
             this.TabControl = new System.Windows.Forms.TabControl();
             this.TabCompetitiveness = new System.Windows.Forms.TabPage();
+            this.LabelCoefCheck = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LabelCoef = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,11 +75,12 @@
             this.TabControl.Location = new System.Drawing.Point(12, 12);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(987, 545);
+            this.TabControl.Size = new System.Drawing.Size(987, 604);
             this.TabControl.TabIndex = 0;
             // 
             // TabCompetitiveness
             // 
+            this.TabCompetitiveness.Controls.Add(this.LabelCoefCheck);
             this.TabCompetitiveness.Controls.Add(this.tableLayoutPanel2);
             this.TabCompetitiveness.Controls.Add(this.ButtonCalculateCompetitiveness);
             this.TabCompetitiveness.Controls.Add(this.panel1);
@@ -86,10 +88,22 @@
             this.TabCompetitiveness.Location = new System.Drawing.Point(4, 22);
             this.TabCompetitiveness.Name = "TabCompetitiveness";
             this.TabCompetitiveness.Padding = new System.Windows.Forms.Padding(3);
-            this.TabCompetitiveness.Size = new System.Drawing.Size(979, 519);
+            this.TabCompetitiveness.Size = new System.Drawing.Size(979, 578);
             this.TabCompetitiveness.TabIndex = 0;
             this.TabCompetitiveness.Text = "Оценка конкурентоспособности проекта в сравнении с аналогом";
             this.TabCompetitiveness.UseVisualStyleBackColor = true;
+            // 
+            // LabelCoefCheck
+            // 
+            this.LabelCoefCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LabelCoefCheck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelCoefCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LabelCoefCheck.Location = new System.Drawing.Point(482, 511);
+            this.LabelCoefCheck.Name = "LabelCoefCheck";
+            this.LabelCoefCheck.Size = new System.Drawing.Size(87, 61);
+            this.LabelCoefCheck.TabIndex = 6;
+            this.LabelCoefCheck.Text = "Всё хорошо!";
+            this.LabelCoefCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -103,7 +117,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LabelCoef, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 4, 0);
@@ -128,17 +142,17 @@
             this.label1.Text = "Показатели качества";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // LabelCoef
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(472, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 66);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Коэф. весомости";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LabelCoef.AutoSize = true;
+            this.LabelCoef.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabelCoef.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelCoef.Location = new System.Drawing.Point(472, 1);
+            this.LabelCoef.Name = "LabelCoef";
+            this.LabelCoef.Size = new System.Drawing.Size(87, 66);
+            this.LabelCoef.TabIndex = 1;
+            this.LabelCoef.Text = "Коэф. весомости";
+            this.LabelCoef.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -191,9 +205,9 @@
             // ButtonCalculateCompetitiveness
             // 
             this.ButtonCalculateCompetitiveness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonCalculateCompetitiveness.Location = new System.Drawing.Point(457, 465);
+            this.ButtonCalculateCompetitiveness.Location = new System.Drawing.Point(575, 511);
             this.ButtonCalculateCompetitiveness.Name = "ButtonCalculateCompetitiveness";
-            this.ButtonCalculateCompetitiveness.Size = new System.Drawing.Size(166, 48);
+            this.ButtonCalculateCompetitiveness.Size = new System.Drawing.Size(166, 60);
             this.ButtonCalculateCompetitiveness.TabIndex = 4;
             this.ButtonCalculateCompetitiveness.Text = "Посчитать";
             this.ButtonCalculateCompetitiveness.UseVisualStyleBackColor = true;
@@ -204,7 +218,7 @@
             this.panel1.Controls.Add(this.TableCompetitiveness);
             this.panel1.Location = new System.Drawing.Point(6, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 378);
+            this.panel1.Size = new System.Drawing.Size(967, 425);
             this.panel1.TabIndex = 3;
             // 
             // TableCompetitiveness
@@ -369,9 +383,9 @@
             // ButtonAddCompetitiveness
             // 
             this.ButtonAddCompetitiveness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonAddCompetitiveness.Location = new System.Drawing.Point(7, 464);
+            this.ButtonAddCompetitiveness.Location = new System.Drawing.Point(6, 511);
             this.ButtonAddCompetitiveness.Name = "ButtonAddCompetitiveness";
-            this.ButtonAddCompetitiveness.Size = new System.Drawing.Size(438, 49);
+            this.ButtonAddCompetitiveness.Size = new System.Drawing.Size(469, 61);
             this.ButtonAddCompetitiveness.TabIndex = 2;
             this.ButtonAddCompetitiveness.Text = "Добавить запись";
             this.ButtonAddCompetitiveness.UseVisualStyleBackColor = true;
@@ -381,7 +395,7 @@
             this.TabPlanning.Location = new System.Drawing.Point(4, 22);
             this.TabPlanning.Name = "TabPlanning";
             this.TabPlanning.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPlanning.Size = new System.Drawing.Size(979, 519);
+            this.TabPlanning.Size = new System.Drawing.Size(979, 578);
             this.TabPlanning.TabIndex = 1;
             this.TabPlanning.Text = "Планирование комплекса работ по разработке проекта и оценка";
             this.TabPlanning.UseVisualStyleBackColor = true;
@@ -390,7 +404,7 @@
             // 
             this.TabExpenses.Location = new System.Drawing.Point(4, 22);
             this.TabExpenses.Name = "TabExpenses";
-            this.TabExpenses.Size = new System.Drawing.Size(979, 519);
+            this.TabExpenses.Size = new System.Drawing.Size(979, 578);
             this.TabExpenses.TabIndex = 2;
             this.TabExpenses.Text = "Расчет затрат на разработку проекта";
             this.TabExpenses.UseVisualStyleBackColor = true;
@@ -399,7 +413,7 @@
             // 
             this.TabOperatingCosts.Location = new System.Drawing.Point(4, 22);
             this.TabOperatingCosts.Name = "TabOperatingCosts";
-            this.TabOperatingCosts.Size = new System.Drawing.Size(979, 519);
+            this.TabOperatingCosts.Size = new System.Drawing.Size(979, 578);
             this.TabOperatingCosts.TabIndex = 3;
             this.TabOperatingCosts.Text = "Расчет эксплуатационных затрат";
             this.TabOperatingCosts.UseVisualStyleBackColor = true;
@@ -408,7 +422,7 @@
             // 
             this.TabEconomicEfficiency.Location = new System.Drawing.Point(4, 22);
             this.TabEconomicEfficiency.Name = "TabEconomicEfficiency";
-            this.TabEconomicEfficiency.Size = new System.Drawing.Size(979, 519);
+            this.TabEconomicEfficiency.Size = new System.Drawing.Size(979, 578);
             this.TabEconomicEfficiency.TabIndex = 4;
             this.TabEconomicEfficiency.Text = "Расчет показателей экономической эффективности";
             this.TabEconomicEfficiency.UseVisualStyleBackColor = true;
@@ -418,7 +432,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1011, 569);
+            this.ClientSize = new System.Drawing.Size(1011, 628);
             this.Controls.Add(this.TabControl);
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -459,11 +473,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LabelCoef;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LabelCoefCheck;
     }
 }
 
