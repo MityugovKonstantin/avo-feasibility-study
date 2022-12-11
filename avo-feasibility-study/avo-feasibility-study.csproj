@@ -58,8 +58,9 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Competitiveness.cs" />
-    <Compile Include="Models\ChangeCompetitveness.cs" />
+    <Compile Include="Interfaces\Iui.cs" />
+    <Compile Include="Models\CompetitivenessEntry.cs" />
+    <Compile Include="Models\ChangeCompetitivenessEntry.cs" />
     <Compile Include="Presenter.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -93,6 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\avo-feasibility-study.BL\avo-feasibility-study.BL.csproj">
+      <Project>{652f82ce-085a-4f4f-a0b3-65bbd7067daf}</Project>
+      <Name>avo-feasibility-study.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

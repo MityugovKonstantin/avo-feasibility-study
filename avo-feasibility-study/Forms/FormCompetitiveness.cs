@@ -7,7 +7,7 @@ namespace avo_feasibility_study.Forms.AddForms
     public partial class FormCompetitiveness : Form
     {
 
-        public event EventHandler<Competitiveness> AddCompetitiveness;
+        public event EventHandler<CompetitivenessEntry> AddCompetitiveness;
         public event EventHandler<ChangeCompetitiveness> ChangeCompetitiveness;
 
         private int _row;
@@ -78,7 +78,7 @@ namespace avo_feasibility_study.Forms.AddForms
             }
         }
 
-        private Competitiveness CollectParams()
+        private CompetitivenessEntry CollectParams()
         {
             var quolityScore = TextQualityScore.Text;
             if (String.IsNullOrEmpty(quolityScore))
@@ -114,7 +114,7 @@ namespace avo_feasibility_study.Forms.AddForms
                     "Значение должно быть больше нуля и меньше или равно десяти!"
                 );
 
-            Competitiveness competitiveness = new Competitiveness()
+            CompetitivenessEntry competitiveness = new CompetitivenessEntry()
             {
                 QualityScore = TextQualityScore.Text,
                 Coef = float.Parse(TextCoef.Text),

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using avo_feasibility_study.BL.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,13 @@ namespace avo_feasibility_study
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            var view = new MainForm();
+            var model = new CompetitivenessEvaluation();
+
+            var presenter = new Presenter(view, model);
+
+            Application.Run(view);
         }
     }
 }

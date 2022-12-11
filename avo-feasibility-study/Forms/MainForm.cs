@@ -1,14 +1,18 @@
 ﻿using avo_feasibility_study.Forms.AddForms;
+using avo_feasibility_study.Interfaces;
 using avo_feasibility_study.Models;
+using avo_feasibility_study.BL.Models;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using avo_feasibility_study.BL.Models.Results;
 
 namespace avo_feasibility_study
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, Iui
     {
 
+        public event EventHandler<CompetitivenessParams> OnEvaluation;
         private const int _rowHeight = 52;
 
         public MainForm()
@@ -18,10 +22,44 @@ namespace avo_feasibility_study
             new ToolTip().SetToolTip(LabelCoef, "Сумма всех коэфициентов не должна превышать единицу");
 
             ButtonAddCompetitiveness.Click += ButtonAddEntry_Click;
+            ButtonEvaluationCompetitiveness.Click += ButtonAssessmentCompetitiveness_Click;
             button2.Click += ButtonChange_Click;
             button4.Click += ButtonChange_Click;
             button3.Click += ButtonDelete_Click;
             button5.Click += ButtonDelete_Click;
+        }
+
+        private void ButtonAssessmentCompetitiveness_Click(object sender, EventArgs e)
+        {
+            var table = TableCompetitiveness;
+            var rowCount = table.RowCount;
+
+            float[] coefs = new float[rowCount];
+            int[] projectEvaluation = new int[rowCount];
+            int[] analogueEvaluation = new int[rowCount];
+            for (int i = 0; i < rowCount; i++)
+            {
+                var currentCoefLabel = table.GetControlFromPosition(1, i) as Label;
+                var currentCoef = float.Parse(currentCoefLabel.Text);
+                var currentProjectEvaluationLabel = table.GetControlFromPosition(2, i) as Label;
+                var currentProjectEvaluation = int.Parse(currentProjectEvaluationLabel.Text);
+                var currentAnalogEvaluationLabel = table.GetControlFromPosition(3, i) as Label;
+                var currentAnalogEvaluation = int.Parse(currentAnalogEvaluationLabel.Text);
+
+                coefs[i] = currentCoef;
+                projectEvaluation[i] = currentProjectEvaluation;
+                analogueEvaluation[i] = currentAnalogEvaluation;
+            }
+
+            CompetitivenessParams competitivenessParams = new CompetitivenessParams()
+            {
+                ArraySize = rowCount,
+                Coefs = coefs,
+                ProjectEvaluations = projectEvaluation,
+                AnalogueEvaluations = analogueEvaluation
+            };
+
+            OnEvaluation?.Invoke(sender, competitivenessParams);
         }
 
         private void ButtonAddEntry_Click(object sender, EventArgs e)
@@ -118,7 +156,7 @@ namespace avo_feasibility_study
             addForm.ShowDialog();
         }
 
-        private void AddRow(object sender, Competitiveness competitiveness)
+        private void AddRow(object sender, CompetitivenessEntry competitiveness)
         {
             TableCompetitiveness.Height += _rowHeight;          // Increase table height
             TableCompetitiveness.RowCount++;                    // Create new row in table
@@ -225,19 +263,28 @@ namespace avo_feasibility_study
                 LabelCoefCheck.BackColor = Color.FromArgb(192, 255, 192);
                 LabelCoefCheck.ForeColor = Color.FromArgb(0, 64, 0);
                 LabelCoefCheck.Text = "Всё хорошо!";
+                ButtonEvaluationCompetitiveness.Enabled = true;
             }
             else if (sumCoefs > 1)
             {
                 LabelCoefCheck.BackColor = Color.FromArgb(255, 192, 192);
                 LabelCoefCheck.ForeColor = Color.Maroon;
                 LabelCoefCheck.Text = "Сумма коэфициентов больше одного!";
+                ButtonEvaluationCompetitiveness.Enabled = false;
             }
             else if (sumCoefs < 1)
             {
                 LabelCoefCheck.BackColor = Color.FromArgb(255, 192, 192);
                 LabelCoefCheck.ForeColor = Color.Maroon;
                 LabelCoefCheck.Text = "Сумма коэфициентов меньше одного!";
+                ButtonEvaluationCompetitiveness.Enabled = false;
             }
+        }
+
+        public void ShowResult(EvaluationResult result)
+        {
+            LabelResult.Text = result.ResultMessage +
+                "\nПотому что КТС первого программного продукта по отношению ко второму = " + Math.Round(result.Teс, 2);
         }
     }
 }

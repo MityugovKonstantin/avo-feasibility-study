@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.ButtonCalculateCompetitiveness = new System.Windows.Forms.Button();
+            this.ButtonEvaluationCompetitiveness = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TableCompetitiveness = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
@@ -58,6 +58,7 @@
             this.TabExpenses = new System.Windows.Forms.TabPage();
             this.TabOperatingCosts = new System.Windows.Forms.TabPage();
             this.TabEconomicEfficiency = new System.Windows.Forms.TabPage();
+            this.LabelResult = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.TabCompetitiveness.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -80,9 +81,10 @@
             // 
             // TabCompetitiveness
             // 
+            this.TabCompetitiveness.Controls.Add(this.LabelResult);
             this.TabCompetitiveness.Controls.Add(this.LabelCoefCheck);
             this.TabCompetitiveness.Controls.Add(this.tableLayoutPanel2);
-            this.TabCompetitiveness.Controls.Add(this.ButtonCalculateCompetitiveness);
+            this.TabCompetitiveness.Controls.Add(this.ButtonEvaluationCompetitiveness);
             this.TabCompetitiveness.Controls.Add(this.panel1);
             this.TabCompetitiveness.Controls.Add(this.ButtonAddCompetitiveness);
             this.TabCompetitiveness.Location = new System.Drawing.Point(4, 22);
@@ -98,9 +100,9 @@
             this.LabelCoefCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.LabelCoefCheck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LabelCoefCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LabelCoefCheck.Location = new System.Drawing.Point(482, 511);
+            this.LabelCoefCheck.Location = new System.Drawing.Point(482, 497);
             this.LabelCoefCheck.Name = "LabelCoefCheck";
-            this.LabelCoefCheck.Size = new System.Drawing.Size(87, 61);
+            this.LabelCoefCheck.Size = new System.Drawing.Size(87, 75);
             this.LabelCoefCheck.TabIndex = 6;
             this.LabelCoefCheck.Text = "Всё хорошо!";
             this.LabelCoefCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,15 +204,15 @@
             this.label6.Text = "Удалить";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ButtonCalculateCompetitiveness
+            // ButtonEvaluationCompetitiveness
             // 
-            this.ButtonCalculateCompetitiveness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonCalculateCompetitiveness.Location = new System.Drawing.Point(575, 511);
-            this.ButtonCalculateCompetitiveness.Name = "ButtonCalculateCompetitiveness";
-            this.ButtonCalculateCompetitiveness.Size = new System.Drawing.Size(166, 60);
-            this.ButtonCalculateCompetitiveness.TabIndex = 4;
-            this.ButtonCalculateCompetitiveness.Text = "Посчитать";
-            this.ButtonCalculateCompetitiveness.UseVisualStyleBackColor = true;
+            this.ButtonEvaluationCompetitiveness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonEvaluationCompetitiveness.Location = new System.Drawing.Point(575, 497);
+            this.ButtonEvaluationCompetitiveness.Name = "ButtonEvaluationCompetitiveness";
+            this.ButtonEvaluationCompetitiveness.Size = new System.Drawing.Size(113, 75);
+            this.ButtonEvaluationCompetitiveness.TabIndex = 4;
+            this.ButtonEvaluationCompetitiveness.Text = "Оценить";
+            this.ButtonEvaluationCompetitiveness.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -218,7 +220,7 @@
             this.panel1.Controls.Add(this.TableCompetitiveness);
             this.panel1.Location = new System.Drawing.Point(6, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 425);
+            this.panel1.Size = new System.Drawing.Size(967, 411);
             this.panel1.TabIndex = 3;
             // 
             // TableCompetitiveness
@@ -383,9 +385,9 @@
             // ButtonAddCompetitiveness
             // 
             this.ButtonAddCompetitiveness.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonAddCompetitiveness.Location = new System.Drawing.Point(6, 511);
+            this.ButtonAddCompetitiveness.Location = new System.Drawing.Point(6, 497);
             this.ButtonAddCompetitiveness.Name = "ButtonAddCompetitiveness";
-            this.ButtonAddCompetitiveness.Size = new System.Drawing.Size(469, 61);
+            this.ButtonAddCompetitiveness.Size = new System.Drawing.Size(469, 75);
             this.ButtonAddCompetitiveness.TabIndex = 2;
             this.ButtonAddCompetitiveness.Text = "Добавить запись";
             this.ButtonAddCompetitiveness.UseVisualStyleBackColor = true;
@@ -427,6 +429,15 @@
             this.TabEconomicEfficiency.Text = "Расчет показателей экономической эффективности";
             this.TabEconomicEfficiency.UseVisualStyleBackColor = true;
             // 
+            // LabelResult
+            // 
+            this.LabelResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelResult.Location = new System.Drawing.Point(694, 497);
+            this.LabelResult.Name = "LabelResult";
+            this.LabelResult.Size = new System.Drawing.Size(279, 74);
+            this.LabelResult.TabIndex = 7;
+            this.LabelResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,7 +469,7 @@
         private System.Windows.Forms.Button ButtonAddCompetitiveness;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel TableCompetitiveness;
-        private System.Windows.Forms.Button ButtonCalculateCompetitiveness;
+        private System.Windows.Forms.Button ButtonEvaluationCompetitiveness;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -479,6 +490,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label LabelCoefCheck;
+        private System.Windows.Forms.Label LabelResult;
     }
 }
 

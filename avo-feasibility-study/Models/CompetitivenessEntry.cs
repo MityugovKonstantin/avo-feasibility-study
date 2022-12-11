@@ -1,6 +1,6 @@
 ﻿namespace avo_feasibility_study.Models
 {
-    public class Competitiveness
+    public class CompetitivenessEntry
     {
         public string QualityScore { get; set; }
         public float Coef { get; set; }
