@@ -27,7 +27,7 @@ namespace avo_feasibility_study.Forms.AddForms
             InitializeComponent();
 
             ButtonPost.Text =       "Изменить";
-            this.Name =             "Измение записи";
+            this.Name =             "Изменение записи";
             TextQualityScore.Text = competitiveness.QualityScore;
             TextCoef.Text =         competitiveness.Coef.ToString();
             TextProject.Text =      competitiveness.ProjectEvaluation.ToString();
@@ -87,11 +87,11 @@ namespace avo_feasibility_study.Forms.AddForms
             bool isCoefParseSuccess = float.TryParse(TextCoef.Text, out float coef);
             if (!isCoefParseSuccess)
                 throw new ArgumentException("Коэффициент весомости был введён неверно!");
-            if (coef < 0.001 || coef > 1)
+            if (coef < 0 || coef > 1)
                 throw new ArgumentOutOfRangeException(
                     "Коэффициент весомости",
                     "Значение введено неверно!\n" +
-                    "Значение должно быть больше нуля и меньше одного!"
+                    "Значение должно находится в диапазоне от 0 до 1!"
                 );
 
             bool isProjectEvaluationParseSuccess = int.TryParse(TextProject.Text, out int projectEvaluation);
@@ -101,7 +101,7 @@ namespace avo_feasibility_study.Forms.AddForms
                 throw new ArgumentOutOfRangeException(
                     "Оценка проекта",
                     "Значение введено неверно!\n" +
-                    "Значение должно быть больше нуля и меньше или равно десяти!"
+                    "Значение должно находится в диапазоне от 1 до 10!"
                 );
 
             bool isAnalogEvaluationParseSuccess = int.TryParse(TextAnalog.Text, out int analogEvaluation);
@@ -111,7 +111,7 @@ namespace avo_feasibility_study.Forms.AddForms
                 throw new ArgumentOutOfRangeException(
                     "Оценка аналога",
                     "Значение введено неверно!\n" +
-                    "Значение должно быть больше нуля и меньше или равно десяти!"
+                    "Значение должно находится в диапазоне от 1 до 10!"
                 );
 
             CompetitivenessEntry competitiveness = new CompetitivenessEntry()

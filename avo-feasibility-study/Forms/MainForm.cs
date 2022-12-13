@@ -265,18 +265,11 @@ namespace avo_feasibility_study
                 LabelCoefCheck.Text = "Всё хорошо!";
                 ButtonEvaluationCompetitiveness.Enabled = true;
             }
-            else if (sumCoefs > 1)
+            else
             {
                 LabelCoefCheck.BackColor = Color.FromArgb(255, 192, 192);
                 LabelCoefCheck.ForeColor = Color.Maroon;
-                LabelCoefCheck.Text = "Сумма коэфициентов больше одного!";
-                ButtonEvaluationCompetitiveness.Enabled = false;
-            }
-            else if (sumCoefs < 1)
-            {
-                LabelCoefCheck.BackColor = Color.FromArgb(255, 192, 192);
-                LabelCoefCheck.ForeColor = Color.Maroon;
-                LabelCoefCheck.Text = "Сумма коэфициентов меньше одного!";
+                LabelCoefCheck.Text = "Сумма коэфициентов весомости = " + sumCoefs + ", а должна быть = 1.";
                 ButtonEvaluationCompetitiveness.Enabled = false;
             }
         }
@@ -284,7 +277,7 @@ namespace avo_feasibility_study
         public void ShowResult(EvaluationResult result)
         {
             LabelResult.Text = result.ResultMessage +
-                "\nПотому что КТС первого программного продукта по отношению ко второму = " + Math.Round(result.Teс, 2);
+                "\nКТС первого программного продукта по отношению ко второму = " + Math.Round(result.Teс, 2) + ".";
         }
     }
 }
