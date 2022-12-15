@@ -17,7 +17,7 @@ namespace avo_feasibility_study.Forms.AddForms
             InitializeComponent();
 
             ButtonPost.Text = "Добавить";
-            this.Name = "Добавление записи";
+            this.Text = "Добавление записи";
 
             ButtonPost.Click += AddButton_Click;
         }
@@ -27,7 +27,7 @@ namespace avo_feasibility_study.Forms.AddForms
             InitializeComponent();
 
             ButtonPost.Text =       "Изменить";
-            this.Name =             "Изменение записи";
+            this.Text =             "Изменение записи";
             TextQualityScore.Text = competitiveness.QualityScore;
             TextCoef.Text =         competitiveness.Coef.ToString();
             TextProject.Text =      competitiveness.ProjectEvaluation.ToString();
