@@ -66,6 +66,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableService.cs" />
     <EmbeddedResource Include="Forms\FormCompetitiveness.resx">
       <DependentUpon>FormCompetitiveness.cs</DependentUpon>
     </EmbeddedResource>

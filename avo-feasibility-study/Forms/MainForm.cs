@@ -27,6 +27,127 @@ namespace avo_feasibility_study
             button4.Click += ButtonChange_Click;
             button3.Click += ButtonDelete_Click;
             button5.Click += ButtonDelete_Click;
+
+            for (int row = 0; row < 16; row++)
+            {
+                var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
+                beginDate.ValueChanged += BeginDate_ValueChanged;
+
+                var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
+                counter.ValueChanged += Counter_ValueChanged;
+            }
+
+            for (int row = 0; row < 14; row++)
+            {
+                var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
+                endDate.ValueChanged += EndDate_ValueChanged;
+            }
+
+            
+
+            for (int row = 0; row < 4; row++)
+            {
+                var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
+                beginDate.ValueChanged += BeginDate_ValueChanged;
+
+                var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
+                counter.ValueChanged += Counter_ValueChanged;
+            }
+
+            for (int row = 0; row < 2; row++)
+            {
+                var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
+                endDate.ValueChanged += EndDate_ValueChanged;
+            }
+
+        }
+
+        private void EndDate_ValueChanged(object sender, EventArgs e)
+        {
+            var currentEndDate = sender as DateTimePicker;
+            var currentEndDateValue = currentEndDate.Value;
+            var row = TablePreparation.GetPositionFromControl(currentEndDate).Row;
+
+            if (row % 2 == 0)
+            {
+                var nextEndDate = TablePreparation.GetControlFromPosition(2, row + 1) as DateTimePicker;
+                var nextEndDateValue = nextEndDate.Value;
+                if (nextEndDateValue >= currentEndDateValue)
+                {
+                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
+                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 3) as DateTimePicker;
+                    nextBeginDate1.Value = nextEndDateValue.AddDays(1);
+                    nextBeginDate2.Value = nextEndDateValue.AddDays(1);
+                }
+                else
+                {
+                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
+                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 3) as DateTimePicker;
+                    nextBeginDate1.Value = currentEndDateValue.AddDays(1);
+                    nextBeginDate2.Value = currentEndDateValue.AddDays(1);
+                }
+            }
+            else
+            {
+                var previousEndDate = TablePreparation.GetControlFromPosition(2, row + 1) as DateTimePicker;
+                var previousEndDateValue = previousEndDate.Value;
+                if (previousEndDateValue >= currentEndDateValue)
+                {
+                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 1) as DateTimePicker;
+                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
+                    nextBeginDate1.Value = previousEndDateValue.AddDays(1);
+                    nextBeginDate2.Value = previousEndDateValue.AddDays(1);
+                }
+                else
+                {
+                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 1) as DateTimePicker;
+                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
+                    nextBeginDate1.Value = currentEndDateValue.AddDays(1);
+                    nextBeginDate2.Value = currentEndDateValue.AddDays(1);
+                }
+            }
+        }
+
+        private void BeginDate_ValueChanged(object sender, EventArgs e)
+        {
+            var beginDate = sender as DateTimePicker;
+            var row = TablePreparation.GetPositionFromControl(beginDate).Row;
+            var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
+            var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
+            var counterValue = (int)counter.Value;
+            if (counterValue == 0)
+            {
+                beginDate.Hide();
+                endDate.Hide();
+                endDate.Value = beginDate.Value;
+            }
+            else
+            {
+                beginDate.Show();
+                endDate.Show();
+                endDate.Value = beginDate.Value.AddDays(counterValue - 1);
+            }
+        }
+
+        private void Counter_ValueChanged(object sender, EventArgs e)
+        {
+            var counter = sender as NumericUpDown;
+            var row = TablePreparation.GetPositionFromControl(counter).Row;
+            var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
+            var beginDateValue = beginDate.Value;
+            var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
+            if (counter.Value == 0)
+            {
+                beginDate.Hide();
+                endDate.Hide();
+            }
+            else
+            {
+                beginDate.Show();
+                endDate.Show();
+                endDate.Value = beginDateValue.AddDays((int)counter.Value - 1);
+            }
+
         }
 
         private void ButtonAssessmentCompetitiveness_Click(object sender, EventArgs e)
