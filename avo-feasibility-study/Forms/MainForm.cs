@@ -28,126 +28,53 @@ namespace avo_feasibility_study
             button3.Click += ButtonDelete_Click;
             button5.Click += ButtonDelete_Click;
 
-            for (int row = 0; row < 16; row++)
-            {
-                var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
-                beginDate.ValueChanged += BeginDate_ValueChanged;
+            TableLayoutPanel[] tables = new TableLayoutPanel[] { TablePreparation, TableDesign, ProgrammingAndTestingTable, DocumentationTable };
+            TableService tableService = new TableService(tables);
+            tableService.AddEvents();
 
-                var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
-                counter.ValueChanged += Counter_ValueChanged;
-            }
-
-            for (int row = 0; row < 14; row++)
-            {
-                var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
-                endDate.ValueChanged += EndDate_ValueChanged;
-            }
-
-            
-
-            for (int row = 0; row < 4; row++)
-            {
-                var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
-                beginDate.ValueChanged += BeginDate_ValueChanged;
-
-                var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
-                counter.ValueChanged += Counter_ValueChanged;
-            }
-
-            for (int row = 0; row < 2; row++)
-            {
-                var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
-                endDate.ValueChanged += EndDate_ValueChanged;
-            }
+            var firstDate = TablePreparation.GetControlFromPosition(1, 0) as DateTimePicker;
+            var secondDate = TableDesign.GetControlFromPosition(1, 1) as DateTimePicker;
+            firstDate.ValueChanged += tableService.ConnectFirstDate_ValueChange;
+            firstDate.Value = new DateTime(2013, 1, 21);
+            ButtonHoursCalculate.Click += ButtonHoursCalculate_Click;
 
         }
 
-        private void EndDate_ValueChanged(object sender, EventArgs e)
+        private void ButtonHoursCalculate_Click(object sender, EventArgs e)
         {
-            var currentEndDate = sender as DateTimePicker;
-            var currentEndDateValue = currentEndDate.Value;
-            var row = TablePreparation.GetPositionFromControl(currentEndDate).Row;
+            int supervisorHours = 0;
+            int programmerHours = 0;
 
-            if (row % 2 == 0)
+            TableLayoutPanel[] tables = new TableLayoutPanel[]
             {
-                var nextEndDate = TablePreparation.GetControlFromPosition(2, row + 1) as DateTimePicker;
-                var nextEndDateValue = nextEndDate.Value;
-                if (nextEndDateValue >= currentEndDateValue)
-                {
-                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
-                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 3) as DateTimePicker;
-                    nextBeginDate1.Value = nextEndDateValue.AddDays(1);
-                    nextBeginDate2.Value = nextEndDateValue.AddDays(1);
-                }
-                else
-                {
-                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
-                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 3) as DateTimePicker;
-                    nextBeginDate1.Value = currentEndDateValue.AddDays(1);
-                    nextBeginDate2.Value = currentEndDateValue.AddDays(1);
-                }
-            }
-            else
-            {
-                var previousEndDate = TablePreparation.GetControlFromPosition(2, row + 1) as DateTimePicker;
-                var previousEndDateValue = previousEndDate.Value;
-                if (previousEndDateValue >= currentEndDateValue)
-                {
-                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 1) as DateTimePicker;
-                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
-                    nextBeginDate1.Value = previousEndDateValue.AddDays(1);
-                    nextBeginDate2.Value = previousEndDateValue.AddDays(1);
-                }
-                else
-                {
-                    var nextBeginDate1 = TablePreparation.GetControlFromPosition(1, row + 1) as DateTimePicker;
-                    var nextBeginDate2 = TablePreparation.GetControlFromPosition(1, row + 2) as DateTimePicker;
-                    nextBeginDate1.Value = currentEndDateValue.AddDays(1);
-                    nextBeginDate2.Value = currentEndDateValue.AddDays(1);
-                }
-            }
-        }
+                TablePreparation,
+                TableDesign, 
+                ProgrammingAndTestingTable, 
+                DocumentationTable
+            };
 
-        private void BeginDate_ValueChanged(object sender, EventArgs e)
-        {
-            var beginDate = sender as DateTimePicker;
-            var row = TablePreparation.GetPositionFromControl(beginDate).Row;
-            var counter = TablePreparation.GetControlFromPosition(0, row) as NumericUpDown;
-            var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
-            var counterValue = (int)counter.Value;
-            if (counterValue == 0)
+            for (int row = 0; row < TablePreparation.RowCount; row += 2)
             {
-                beginDate.Hide();
-                endDate.Hide();
-                endDate.Value = beginDate.Value;
+                supervisorHours += (int)(TablePreparation.GetControlFromPosition(0, row) as NumericUpDown).Value;
+                programmerHours += (int)(TablePreparation.GetControlFromPosition(0, row + 1) as NumericUpDown).Value;
             }
-            else
+            for (int row = 0; row < TableDesign.RowCount; row += 2)
             {
-                beginDate.Show();
-                endDate.Show();
-                endDate.Value = beginDate.Value.AddDays(counterValue - 1);
+                supervisorHours += (int)(TableDesign.GetControlFromPosition(0, row) as NumericUpDown).Value;
+                programmerHours += (int)(TableDesign.GetControlFromPosition(0, row + 1) as NumericUpDown).Value;
             }
-        }
-
-        private void Counter_ValueChanged(object sender, EventArgs e)
-        {
-            var counter = sender as NumericUpDown;
-            var row = TablePreparation.GetPositionFromControl(counter).Row;
-            var beginDate = TablePreparation.GetControlFromPosition(1, row) as DateTimePicker;
-            var beginDateValue = beginDate.Value;
-            var endDate = TablePreparation.GetControlFromPosition(2, row) as DateTimePicker;
-            if (counter.Value == 0)
+            for (int row = 0; row < ProgrammingAndTestingTable.RowCount; row += 2)
             {
-                beginDate.Hide();
-                endDate.Hide();
+                supervisorHours += (int)(ProgrammingAndTestingTable.GetControlFromPosition(0, row) as NumericUpDown).Value;
+                programmerHours += (int)(ProgrammingAndTestingTable.GetControlFromPosition(0, row + 1) as NumericUpDown).Value;
             }
-            else
+            for (int row = 0; row < DocumentationTable.RowCount; row += 2)
             {
-                beginDate.Show();
-                endDate.Show();
-                endDate.Value = beginDateValue.AddDays((int)counter.Value - 1);
+                supervisorHours += (int)(DocumentationTable.GetControlFromPosition(0, row) as NumericUpDown).Value;
+                programmerHours += (int)(DocumentationTable.GetControlFromPosition(0, row + 1) as NumericUpDown).Value;
             }
 
+            ShowSecondResult(supervisorHours, programmerHours);
         }
 
         private void ButtonAssessmentCompetitiveness_Click(object sender, EventArgs e)
@@ -395,10 +322,16 @@ namespace avo_feasibility_study
             }
         }
 
-        public void ShowResult(EvaluationResult result)
+        public void ShowFirstResult(EvaluationResult result)
         {
             LabelResult.Text = result.ResultMessage +
                 "\nКТС первого программного продукта по отношению ко второму = " + Math.Round(result.Teс, 2) + ".";
+        }
+
+        public void ShowSecondResult(int sh, int ph)
+        {
+            LabelSupervisorHours.Text = sh.ToString();
+            LabelProgrammerHours.Text = ph.ToString();
         }
     }
 }

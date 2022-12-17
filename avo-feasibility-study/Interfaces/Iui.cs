@@ -6,7 +6,7 @@ namespace avo_feasibility_study.Interfaces
 {
     public interface Iui
     {
-        void ShowResult(EvaluationResult result);
+        void ShowFirstResult(EvaluationResult result);
         event EventHandler<CompetitivenessParams> OnEvaluation;
     }
 }

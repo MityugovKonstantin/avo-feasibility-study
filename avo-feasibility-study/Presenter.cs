@@ -20,7 +20,7 @@ namespace avo_feasibility_study
         private void Evaluation(object sender, CompetitivenessParams parameters)
         {
             var result = _model.Evaluation(parameters);
-            _view.ShowResult(result);
+            _view.ShowFirstResult(result);
         }
     }
 }

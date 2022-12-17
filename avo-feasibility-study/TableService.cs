@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace avo_feasibility_study
@@ -13,19 +14,28 @@ namespace avo_feasibility_study
             _tables = tables;
         }
 
-        public void addEvents()
+        public void AddEvents()
         {
             for (int i = 0; i < _tables.Length; i++)
             {
                 var currentTable = _tables[i];
-                var nextTable = _tables[i + 1];
-                addConnectionInTable(currentTable);
-                if (i != _tables.Length - 1)
-                    tableConnect(currentTable, nextTable);
+                AddConnectionInTable(currentTable);
+                if (i != _tables.Length - 2)
+                {
+                    TableConnect(currentTable);
+                }
             }
         }
 
-        private void addConnectionInTable(TableLayoutPanel table)
+        public void ConnectFirstDate_ValueChange(object sender, EventArgs e)
+        {
+            var dateObject = sender as DateTimePicker;
+            var table = dateObject.Parent as TableLayoutPanel;
+            var nextDate = table.GetControlFromPosition(1, 1) as DateTimePicker;
+            nextDate.Value = dateObject.Value;
+        }
+
+        private void AddConnectionInTable(TableLayoutPanel table)
         {
             var tableEndIndex = table.RowCount;
 
@@ -46,19 +56,19 @@ namespace avo_feasibility_study
 
             var penultimateEndDate = table.GetControlFromPosition(2, tableEndIndex - 2) as DateTimePicker;
             var lastEndDate = table.GetControlFromPosition(2, tableEndIndex - 1) as DateTimePicker;
-            penultimateEndDate.ValueChanged += tableConnectEvent;
-            lastEndDate.ValueChanged += tableConnectEvent;
+            penultimateEndDate.ValueChanged += TableConnectEvent;
+            lastEndDate.ValueChanged += TableConnectEvent;
         }
 
-        private void tableConnect(TableLayoutPanel currentTable, TableLayoutPanel nextTable)
+        private void TableConnect(TableLayoutPanel currentTable)
         {
             var penultimateEndDate = currentTable.GetControlFromPosition(2, currentTable.RowCount - 2) as DateTimePicker;
             var lastEndDate = currentTable.GetControlFromPosition(2, currentTable.RowCount - 1) as DateTimePicker;
-            penultimateEndDate.ValueChanged += tableConnectEvent;
-            lastEndDate.ValueChanged += tableConnectEvent;
+            penultimateEndDate.ValueChanged += TableConnectEvent;
+            lastEndDate.ValueChanged += TableConnectEvent;
         }
 
-        private void tableConnectEvent(object sender, EventArgs e)
+        private void TableConnectEvent(object sender, EventArgs e)
         {
             var currentTableFirstEndDate = sender as DateTimePicker;
             var currentTable = currentTableFirstEndDate.Parent as TableLayoutPanel;
@@ -67,33 +77,34 @@ namespace avo_feasibility_study
             
             for (int i = 0; i < _tables.Length - 1; i++)
             {
-                var table = _tables[i];
-                if (currentTable == table)
+                if (currentTable == _tables[i])
                 {
                     nextTable = _tables[i + 1];
                     break;
                 }
             }
-
-            var nextTableFirstBeginDate = nextTable.GetControlFromPosition(1, 0) as DateTimePicker;
-            var nextTableSecondBeginDate = nextTable.GetControlFromPosition(1, 1) as DateTimePicker;
-
-            DateTimePicker currentTableOtherEndDate = null;
-
-            if (row % 2 == 0)
-                currentTableOtherEndDate = currentTable.GetControlFromPosition(2, row + 1) as DateTimePicker;
-            else
-                currentTableOtherEndDate = currentTable.GetControlFromPosition(2, row - 1) as DateTimePicker;
-
-            if (currentTableFirstEndDate.Value >= currentTableOtherEndDate.Value)
+            if (nextTable != null)
             {
-                nextTableFirstBeginDate.Value = currentTableFirstEndDate.Value.AddDays(1);
-                nextTableSecondBeginDate.Value = currentTableFirstEndDate.Value.AddDays(1);
-            }
-            else
-            {
-                nextTableFirstBeginDate.Value = nextTableSecondBeginDate.Value.AddDays(1);
-                nextTableSecondBeginDate.Value = nextTableSecondBeginDate.Value.AddDays(1);
+                var nextTableFirstBeginDate = nextTable.GetControlFromPosition(1, 0) as DateTimePicker;
+                var nextTableSecondBeginDate = nextTable.GetControlFromPosition(1, 1) as DateTimePicker;
+
+                DateTimePicker currentTableOtherEndDate = null;
+
+                if (row % 2 == 0)
+                    currentTableOtherEndDate = currentTable.GetControlFromPosition(2, row + 1) as DateTimePicker;
+                else
+                    currentTableOtherEndDate = currentTable.GetControlFromPosition(2, row - 1) as DateTimePicker;
+
+                if (currentTableFirstEndDate.Value >= currentTableOtherEndDate.Value)
+                {
+                    nextTableFirstBeginDate.Value = currentTableFirstEndDate.Value.AddDays(1);
+                    nextTableSecondBeginDate.Value = currentTableFirstEndDate.Value.AddDays(1);
+                }
+                else
+                {
+                    nextTableFirstBeginDate.Value = nextTableSecondBeginDate.Value.AddDays(1);
+                    nextTableSecondBeginDate.Value = nextTableSecondBeginDate.Value.AddDays(1);
+                }
             }
         }
 
@@ -125,7 +136,7 @@ namespace avo_feasibility_study
             }
             else
             {
-                var previousEndDate = table.GetControlFromPosition(2, row + 1) as DateTimePicker;
+                var previousEndDate = table.GetControlFromPosition(2, row - 1) as DateTimePicker;
                 var previousEndDateValue = previousEndDate.Value;
                 if (previousEndDateValue >= currentEndDateValue)
                 {
