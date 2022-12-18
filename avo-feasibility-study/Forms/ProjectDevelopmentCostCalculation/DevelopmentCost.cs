@@ -12,18 +12,6 @@ namespace avo_feasibility_study.Forms.ProjectDevelopmentCostCalculation
             _table = table;
             _calculateButton = calculateButton;
 
-            _calculateButton.Click += _calculateButton_Click;
-        }
-
-        private void _calculateButton_Click(object sender, System.EventArgs e)
-        {
-            var basicSalary
-            var 
-            var 
-            var 
-            var 
-            var 
-            var 
         }
     }
 }
