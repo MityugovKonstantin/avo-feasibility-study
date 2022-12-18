@@ -2,13 +2,13 @@
 using System;
 using System.Windows.Forms;
 
-namespace avo_feasibility_study.Forms.AddForms
+namespace avo_feasibility_study.Forms.Competitiveness
 {
     public partial class FormCompetitiveness : Form
     {
 
         public event EventHandler<CompetitivenessEntry> AddCompetitiveness;
-        public event EventHandler<ChangeCompetitiveness> ChangeCompetitiveness;
+        public event EventHandler<ChangeCompetitivenessEntry> ChangeCompetitiveness;
 
         private int _row;
 
@@ -22,17 +22,17 @@ namespace avo_feasibility_study.Forms.AddForms
             ButtonPost.Click += AddButton_Click;
         }
 
-        public FormCompetitiveness(ChangeCompetitiveness competitiveness)
+        public FormCompetitiveness(ChangeCompetitivenessEntry competitiveness)
         {
             InitializeComponent();
 
-            ButtonPost.Text =       "Изменить";
-            this.Text =             "Изменение записи";
+            ButtonPost.Text = "Изменить";
+            this.Text = "Изменение записи";
             TextQualityScore.Text = competitiveness.QualityScore;
-            TextCoef.Text =         competitiveness.Coef.ToString();
-            TextProject.Text =      competitiveness.ProjectEvaluation.ToString();
-            TextAnalog.Text =       competitiveness.AnalogEvaluation.ToString();
-            _row =                  competitiveness.Row;
+            TextCoef.Text = competitiveness.Coef.ToString();
+            TextProject.Text = competitiveness.ProjectEvaluation.ToString();
+            TextAnalog.Text = competitiveness.AnalogEvaluation.ToString();
+            _row = competitiveness.Row;
 
             ButtonPost.Click += ChangeButton_Click;
         }
@@ -59,7 +59,7 @@ namespace avo_feasibility_study.Forms.AddForms
             {
                 var competitiveness = CollectParams();
 
-                ChangeCompetitiveness changeCompetitiveness = new ChangeCompetitiveness()
+                ChangeCompetitivenessEntry changeCompetitiveness = new ChangeCompetitivenessEntry()
                 {
                     QualityScore = competitiveness.QualityScore,
                     Coef = competitiveness.Coef,

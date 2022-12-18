@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FormCompetitiveness.cs">
+    <Compile Include="Forms\Competitiveness\DynamicCompetitivenessTable.cs" />
+    <Compile Include="Forms\Competitiveness\FormCompetitiveness.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormCompetitiveness.Designer.cs">
+    <Compile Include="Forms\Competitiveness\FormCompetitiveness.Designer.cs">
       <DependentUpon>FormCompetitiveness.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
@@ -58,20 +59,34 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProjectDevelopmentCostCalculation\BasicSalary.cs" />
+    <Compile Include="Forms\ProjectDevelopmentCostCalculation\DevelopmentCost.cs" />
+    <Compile Include="Forms\ProjectDevelopmentCostCalculation\DynamicMaterialCostsTable.cs" />
+    <Compile Include="Forms\ProjectDevelopmentCostCalculation\FormMaterialEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProjectDevelopmentCostCalculation\FormMaterialEntry.Designer.cs">
+      <DependentUpon>FormMaterialEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Iui.cs" />
+    <Compile Include="Models\ChangeMaterialEntry.cs" />
     <Compile Include="Models\CompetitivenessEntry.cs" />
     <Compile Include="Models\ChangeCompetitivenessEntry.cs" />
+    <Compile Include="Models\MaterialEntry.cs" />
     <Compile Include="Presenter.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TableService.cs" />
-    <EmbeddedResource Include="Forms\FormCompetitiveness.resx">
+    <Compile Include="Forms\PlannerTable\PlannerTableService.cs" />
+    <EmbeddedResource Include="Forms\Competitiveness\FormCompetitiveness.resx">
       <DependentUpon>FormCompetitiveness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectDevelopmentCostCalculation\FormMaterialEntry.resx">
+      <DependentUpon>FormMaterialEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,5 +116,6 @@
       <Name>avo-feasibility-study.BL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,15 +1,13 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
-namespace avo_feasibility_study
+namespace avo_feasibility_study.Forms.PlanerTable
 {
-    public class TableService
+    public class PlannerTableService
     {
         private TableLayoutPanel[] _tables;
 
-        public TableService(TableLayoutPanel[] tables)
+        public PlannerTableService(TableLayoutPanel[] tables)
         {
             _tables = tables;
         }
@@ -196,7 +194,6 @@ namespace avo_feasibility_study
                 endDate.Show();
                 endDate.Value = beginDateValue.AddDays((int)counter.Value - 1);
             }
-
         }
     }
 }
