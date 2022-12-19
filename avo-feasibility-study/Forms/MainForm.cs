@@ -75,6 +75,77 @@ namespace avo_feasibility_study
             ButtonOurOperatingCostsCalculate.Click += ButtonOurOperatingCostsCalculate_Click;
             ButtonAnalogueOperatingCostsCalculate.Click += ButtonAnalogueOperatingCostsCalculate_Click;
             ButtonAnnualOperatingCostsCalculate.Click += ButtonAnnualOperatingCostsCalculate_Click;
+
+            ButtonEconomicEffectCalculate.Click += ButtonEconomicEffectCalculate_Click;
+        }
+
+        private void ButtonEconomicEffectCalculate_Click(object sender, EventArgs e)
+        {
+            var analogueCostPrice = TableEconomicEffect.GetControlFromPosition(1, 1) as Label;
+            var projectCostPrice = TableEconomicEffect.GetControlFromPosition(2, 1) as Label;
+            var analogueTotalCost = TableEconomicEffect.GetControlFromPosition(1, 2) as Label;
+            var projectTotalCost = TableEconomicEffect.GetControlFromPosition (2, 2) as Label;
+            var analogueListedCosts = TableEconomicEffect.GetControlFromPosition(1, 3) as Label;
+            var projectListedCosts = TableEconomicEffect.GetControlFromPosition(2, 3) as Label;
+
+            var projectDevelopmentCosts = TableDevelopmentСosts.GetControlFromPosition(1, 7) as Label;
+            var projectImplementationCosts = LabelProjectImplementationCostsResult;
+
+            try
+            {
+                if (string.IsNullOrEmpty(LabelAnalogueAnnualOperatingCostsResult.Text))
+                    throw new ArgumentException("Необходимо посчитать годовые эксплуатационные затраты!");
+                else
+                    analogueCostPrice.Text = LabelAnalogueAnnualOperatingCostsResult.Text;
+
+                if (string.IsNullOrEmpty(LabelProjectAnnualOperatingCostsResult.Text))
+                    throw new ArgumentException("Необходимо посчитать годовые эксплуатационные затраты!");
+                else
+                    projectCostPrice.Text = LabelProjectAnnualOperatingCostsResult.Text;
+
+                if (string.IsNullOrEmpty(projectDevelopmentCosts.Text))
+                    throw new ArgumentException("Нужно посчитать затраты на разработку проекта!");
+                if (string.IsNullOrEmpty(projectImplementationCosts.Text))
+                    throw new ArgumentException("Нужно посчитать затраты на реализацию проекта!");
+                projectTotalCost.Text =
+                    (float.Parse(projectDevelopmentCosts.Text) + float.Parse(projectImplementationCosts.Text)).ToString();
+
+                if (string.IsNullOrEmpty(LabelImplementingAnalogueCostResult.Text))
+                    throw new ArgumentException("Нужно посчитать затраты на внедрение аналога");
+                else
+                    analogueTotalCost.Text = LabelImplementingAnalogueCostResult.Text;
+
+                var isInvestmentRatioParse = float.TryParse(TextInvestmentRatio.Text, out var investmentRatioValue);
+                if (!isInvestmentRatioParse)
+                    throw new ArgumentException("Нормативный коэффициент эффективности капитальных вложений указан неверно!");
+                if (investmentRatioValue < 0 || investmentRatioValue > 1)
+                    throw new ArgumentException("Нормативный коэффициент эффективности капитальных вложений должен лежать в диапазоне [0, 1]");
+
+                analogueListedCosts.Text =
+                    Math.Round(float.Parse(analogueCostPrice.Text) + float.Parse(analogueTotalCost.Text) * investmentRatioValue, 2).ToString();
+                projectListedCosts.Text =
+                    Math.Round(float.Parse(projectCostPrice.Text) + float.Parse(projectTotalCost.Text) * investmentRatioValue, 2).ToString();
+
+                LabelEconomicEffectResult.Text =
+                    Math.Round(float.Parse(analogueListedCosts.Text) * 1.60 - float.Parse(projectListedCosts.Text), 2).ToString();
+
+                (TableTeoResult.GetControlFromPosition(1, 1) as Label).Text = projectTotalCost.Text;
+                (TableTeoResult.GetControlFromPosition(1, 2) as Label).Text = projectCostPrice.Text;
+                (TableTeoResult.GetControlFromPosition(1, 3) as Label).Text = LabelEconomicEffectResult.Text;
+                (TableTeoResult.GetControlFromPosition(1, 5) as Label).Text =
+                    Math.Round(float.Parse(projectTotalCost.Text) / float.Parse(LabelEconomicEffectResult.Text), 2).ToString();
+                var x = Math.Round(1 / float.Parse((TableTeoResult.GetControlFromPosition(1, 5) as Label).Text), 2);
+                (TableTeoResult.GetControlFromPosition(1, 4) as Label).Text = x.ToString();
+
+                if (x > investmentRatioValue)
+                    LabelResultMessage.Text = "Разработка и внедрениеразрабатываемого продукта является эффективной!";
+                else
+                    LabelResultMessage.Text = "Разработка и внедрениеразрабатываемого продукта не является эффективной!";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void ButtonAnnualOperatingCostsCalculate_Click(object sender, EventArgs e)

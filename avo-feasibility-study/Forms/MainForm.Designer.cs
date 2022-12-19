@@ -227,6 +227,9 @@
             this.TabExpenses = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.ButtonImplementingAnalogueCostCalculate = new System.Windows.Forms.Button();
+            this.LabelImplementingAnalogueCostResult = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
             this.TableImplementingAnalogueCost = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -336,18 +339,61 @@
             this.LabelSupervisorOZP = new System.Windows.Forms.Label();
             this.LabelSupervisorDevelopmentTime = new System.Windows.Forms.Label();
             this.TabOperatingCosts = new System.Windows.Forms.TabPage();
-            this.TabEconomicEfficiency = new System.Windows.Forms.TabPage();
-            this.label130 = new System.Windows.Forms.Label();
-            this.LabelImplementingAnalogueCostResult = new System.Windows.Forms.Label();
-            this.ButtonImplementingAnalogueCostCalculate = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.ButtonAnnualOperatingCostsCalculate = new System.Windows.Forms.Button();
+            this.LabelAnalogueAnnualOperatingCostsResult = new System.Windows.Forms.Label();
+            this.LabelProjectAnnualOperatingCostsResult = new System.Windows.Forms.Label();
+            this.label191 = new System.Windows.Forms.Label();
+            this.TableAnnualOperatingCosts = new System.Windows.Forms.TableLayoutPanel();
+            this.label190 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label187 = new System.Windows.Forms.Label();
+            this.label186 = new System.Windows.Forms.Label();
+            this.label185 = new System.Windows.Forms.Label();
+            this.label184 = new System.Windows.Forms.Label();
+            this.label183 = new System.Windows.Forms.Label();
+            this.label182 = new System.Windows.Forms.Label();
+            this.label181 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label178 = new System.Windows.Forms.Label();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label176 = new System.Windows.Forms.Label();
+            this.label175 = new System.Windows.Forms.Label();
+            this.label174 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label171 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label169 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.TextMaterialCostStandard = new System.Windows.Forms.TextBox();
+            this.TextRepairCostStandard = new System.Windows.Forms.TextBox();
+            this.TextEquipmentPower = new System.Windows.Forms.TextBox();
+            this.TextElectricityTariff = new System.Windows.Forms.TextBox();
+            this.TextEquipmentBookValue2 = new System.Windows.Forms.TextBox();
+            this.TextAverageDailyLoadStandard = new System.Windows.Forms.TextBox();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.TextEquipmentBookValue = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
+            this.TextAnnualDepreciationRate = new System.Windows.Forms.TextBox();
+            this.NumericEquipmentPiecesNumber = new System.Windows.Forms.NumericUpDown();
+            this.label148 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.NumericWorkDays = new System.Windows.Forms.NumericUpDown();
-            this.label131 = new System.Windows.Forms.Label();
             this.ButtonOurOperatingCostsCalculate = new System.Windows.Forms.Button();
             this.label132 = new System.Windows.Forms.Label();
             this.LabelOurOperatingCostsResult = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
             this.TableOurOperatingCosts = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label135 = new System.Windows.Forms.Label();
             this.label136 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
@@ -362,11 +408,6 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label146 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label133 = new System.Windows.Forms.Label();
-            this.TextDistrictCoefficient2 = new System.Windows.Forms.TextBox();
-            this.TextSocialCoef2 = new System.Windows.Forms.TextBox();
-            this.label137 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.ButtonAnalogueOperatingCostsCalculate = new System.Windows.Forms.Button();
             this.label147 = new System.Windows.Forms.Label();
@@ -388,54 +429,50 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label160 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label148 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label161 = new System.Windows.Forms.Label();
-            this.label162 = new System.Windows.Forms.Label();
-            this.label163 = new System.Windows.Forms.Label();
-            this.TextEquipmentBookValue = new System.Windows.Forms.Label();
-            this.label165 = new System.Windows.Forms.Label();
-            this.label166 = new System.Windows.Forms.Label();
-            this.label167 = new System.Windows.Forms.Label();
-            this.label168 = new System.Windows.Forms.Label();
-            this.TextAnnualDepreciationRate = new System.Windows.Forms.TextBox();
-            this.TextAverageDailyLoadStandard = new System.Windows.Forms.TextBox();
-            this.TextEquipmentBookValue2 = new System.Windows.Forms.TextBox();
-            this.TextElectricityTariff = new System.Windows.Forms.TextBox();
-            this.TextEquipmentPower = new System.Windows.Forms.TextBox();
-            this.TextRepairCostStandard = new System.Windows.Forms.TextBox();
-            this.TextMaterialCostStandard = new System.Windows.Forms.TextBox();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label169 = new System.Windows.Forms.Label();
-            this.TableAnnualOperatingCosts = new System.Windows.Forms.TableLayoutPanel();
-            this.label170 = new System.Windows.Forms.Label();
-            this.label171 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label174 = new System.Windows.Forms.Label();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label176 = new System.Windows.Forms.Label();
-            this.label177 = new System.Windows.Forms.Label();
-            this.label178 = new System.Windows.Forms.Label();
-            this.label179 = new System.Windows.Forms.Label();
-            this.label180 = new System.Windows.Forms.Label();
-            this.label181 = new System.Windows.Forms.Label();
-            this.label182 = new System.Windows.Forms.Label();
-            this.label183 = new System.Windows.Forms.Label();
-            this.label184 = new System.Windows.Forms.Label();
-            this.label185 = new System.Windows.Forms.Label();
-            this.label186 = new System.Windows.Forms.Label();
-            this.label187 = new System.Windows.Forms.Label();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label189 = new System.Windows.Forms.Label();
-            this.label190 = new System.Windows.Forms.Label();
-            this.label191 = new System.Windows.Forms.Label();
-            this.LabelProjectAnnualOperatingCostsResult = new System.Windows.Forms.Label();
-            this.LabelAnalogueAnnualOperatingCostsResult = new System.Windows.Forms.Label();
-            this.ButtonAnnualOperatingCostsCalculate = new System.Windows.Forms.Button();
-            this.NumericEquipmentPiecesNumber = new System.Windows.Forms.NumericUpDown();
+            this.label131 = new System.Windows.Forms.Label();
+            this.TextSocialCoef2 = new System.Windows.Forms.TextBox();
+            this.NumericWorkDays = new System.Windows.Forms.NumericUpDown();
+            this.label137 = new System.Windows.Forms.Label();
+            this.label133 = new System.Windows.Forms.Label();
+            this.TextDistrictCoefficient2 = new System.Windows.Forms.TextBox();
+            this.TabEconomicEfficiency = new System.Windows.Forms.TabPage();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.TableEconomicEffect = new System.Windows.Forms.TableLayoutPanel();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label192 = new System.Windows.Forms.Label();
+            this.label193 = new System.Windows.Forms.Label();
+            this.label194 = new System.Windows.Forms.Label();
+            this.label195 = new System.Windows.Forms.Label();
+            this.label196 = new System.Windows.Forms.Label();
+            this.label197 = new System.Windows.Forms.Label();
+            this.label198 = new System.Windows.Forms.Label();
+            this.label199 = new System.Windows.Forms.Label();
+            this.label200 = new System.Windows.Forms.Label();
+            this.label201 = new System.Windows.Forms.Label();
+            this.label202 = new System.Windows.Forms.Label();
+            this.label203 = new System.Windows.Forms.Label();
+            this.label204 = new System.Windows.Forms.Label();
+            this.LabelEconomicEffectResult = new System.Windows.Forms.Label();
+            this.ButtonEconomicEffectCalculate = new System.Windows.Forms.Button();
+            this.label206 = new System.Windows.Forms.Label();
+            this.TextInvestmentRatio = new System.Windows.Forms.TextBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.TableTeoResult = new System.Windows.Forms.TableLayoutPanel();
+            this.label205 = new System.Windows.Forms.Label();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
+            this.label211 = new System.Windows.Forms.Label();
+            this.label212 = new System.Windows.Forms.Label();
+            this.label213 = new System.Windows.Forms.Label();
+            this.label214 = new System.Windows.Forms.Label();
+            this.label215 = new System.Windows.Forms.Label();
+            this.label216 = new System.Windows.Forms.Label();
+            this.label217 = new System.Windows.Forms.Label();
+            this.label218 = new System.Windows.Forms.Label();
+            this.LabelResultMessage = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.TabCompetitiveness.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -500,17 +537,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumericBasicSalaryDays)).BeginInit();
             this.TableBasicSalary.SuspendLayout();
             this.TabOperatingCosts.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.TableAnnualOperatingCosts.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEquipmentPiecesNumber)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericWorkDays)).BeginInit();
             this.TableOurOperatingCosts.SuspendLayout();
             this.panel12.SuspendLayout();
             this.TableAnalogueOperatingCosts.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.TableAnnualOperatingCosts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericEquipmentPiecesNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericWorkDays)).BeginInit();
+            this.TabEconomicEfficiency.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.TableEconomicEffect.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.TableTeoResult.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControl
@@ -2807,6 +2850,34 @@
             this.panel10.Size = new System.Drawing.Size(951, 131);
             this.panel10.TabIndex = 6;
             // 
+            // ButtonImplementingAnalogueCostCalculate
+            // 
+            this.ButtonImplementingAnalogueCostCalculate.Location = new System.Drawing.Point(712, 99);
+            this.ButtonImplementingAnalogueCostCalculate.Name = "ButtonImplementingAnalogueCostCalculate";
+            this.ButtonImplementingAnalogueCostCalculate.Size = new System.Drawing.Size(230, 23);
+            this.ButtonImplementingAnalogueCostCalculate.TabIndex = 10;
+            this.ButtonImplementingAnalogueCostCalculate.Text = "Посчитать";
+            this.ButtonImplementingAnalogueCostCalculate.UseVisualStyleBackColor = true;
+            // 
+            // LabelImplementingAnalogueCostResult
+            // 
+            this.LabelImplementingAnalogueCostResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelImplementingAnalogueCostResult.Location = new System.Drawing.Point(478, 99);
+            this.LabelImplementingAnalogueCostResult.Name = "LabelImplementingAnalogueCostResult";
+            this.LabelImplementingAnalogueCostResult.Size = new System.Drawing.Size(227, 23);
+            this.LabelImplementingAnalogueCostResult.TabIndex = 9;
+            this.LabelImplementingAnalogueCostResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label130
+            // 
+            this.label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label130.Location = new System.Drawing.Point(6, 99);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(465, 23);
+            this.label130.TabIndex = 8;
+            this.label130.Text = "Итого: ";
+            this.label130.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label124
             // 
             this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -3543,7 +3614,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel1.Controls.Add(this.label101, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.label102, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.label103, 4, 0);
@@ -3554,7 +3625,7 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 31);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(933, 37);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
@@ -3565,7 +3636,7 @@
             this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label101.Location = new System.Drawing.Point(830, 1);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(105, 42);
+            this.label101.Size = new System.Drawing.Size(106, 43);
             this.label101.TabIndex = 13;
             this.label101.Text = "Удалить";
             this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3577,7 +3648,7 @@
             this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label102.Location = new System.Drawing.Point(729, 1);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(94, 42);
+            this.label102.Size = new System.Drawing.Size(94, 43);
             this.label102.TabIndex = 12;
             this.label102.Text = "Изменить";
             this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3589,7 +3660,7 @@
             this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label103.Location = new System.Drawing.Point(628, 1);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(94, 42);
+            this.label103.Size = new System.Drawing.Size(94, 43);
             this.label103.TabIndex = 11;
             this.label103.Text = "Сумма, руб";
             this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3601,7 +3672,7 @@
             this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label104.Location = new System.Drawing.Point(527, 1);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(94, 42);
+            this.label104.Size = new System.Drawing.Size(94, 43);
             this.label104.TabIndex = 10;
             this.label104.Text = "Цена за единицу, руб.";
             this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3613,7 +3684,7 @@
             this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label105.Location = new System.Drawing.Point(426, 1);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(94, 42);
+            this.label105.Size = new System.Drawing.Size(94, 43);
             this.label105.TabIndex = 9;
             this.label105.Text = "Требуемое кол-во";
             this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3625,7 +3696,7 @@
             this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label106.Location = new System.Drawing.Point(325, 1);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(94, 42);
+            this.label106.Size = new System.Drawing.Size(94, 43);
             this.label106.TabIndex = 8;
             this.label106.Text = "Единица измерения";
             this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3637,7 +3708,7 @@
             this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label107.Location = new System.Drawing.Point(4, 1);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(314, 42);
+            this.label107.Size = new System.Drawing.Size(314, 43);
             this.label107.TabIndex = 7;
             this.label107.Text = "Материалы";
             this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3698,7 +3769,7 @@
             this.TableMaterial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableMaterial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableMaterial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.TableMaterial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.TableMaterial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.TableMaterial.Controls.Add(this.label91, 0, 0);
             this.TableMaterial.Controls.Add(this.label90, 0, 0);
             this.TableMaterial.Controls.Add(this.button6, 6, 0);
@@ -3709,7 +3780,7 @@
             this.TableMaterial.Location = new System.Drawing.Point(7, 4);
             this.TableMaterial.Name = "TableMaterial";
             this.TableMaterial.RowCount = 1;
-            this.TableMaterial.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.TableMaterial.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.TableMaterial.Size = new System.Drawing.Size(933, 33);
             this.TableMaterial.TabIndex = 6;
             // 
@@ -3719,7 +3790,7 @@
             this.label91.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label91.Location = new System.Drawing.Point(325, 1);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(94, 34);
+            this.label91.Size = new System.Drawing.Size(94, 35);
             this.label91.TabIndex = 22;
             this.label91.Text = "шт.";
             this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3730,7 +3801,7 @@
             this.label90.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label90.Location = new System.Drawing.Point(4, 1);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(314, 34);
+            this.label90.Size = new System.Drawing.Size(314, 35);
             this.label90.TabIndex = 21;
             this.label90.Text = "Компакт-диск";
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3740,7 +3811,7 @@
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Location = new System.Drawing.Point(830, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(105, 28);
+            this.button6.Size = new System.Drawing.Size(106, 29);
             this.button6.TabIndex = 27;
             this.button6.Text = "Удалить";
             this.button6.UseVisualStyleBackColor = true;
@@ -3750,7 +3821,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(729, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 28);
+            this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 26;
             this.button1.Text = "Изменить";
             this.button1.UseVisualStyleBackColor = true;
@@ -3761,7 +3832,7 @@
             this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label93.Location = new System.Drawing.Point(527, 1);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(94, 34);
+            this.label93.Size = new System.Drawing.Size(94, 35);
             this.label93.TabIndex = 24;
             this.label93.Text = "400";
             this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3772,7 +3843,7 @@
             this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label92.Location = new System.Drawing.Point(426, 1);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(94, 34);
+            this.label92.Size = new System.Drawing.Size(94, 35);
             this.label92.TabIndex = 23;
             this.label92.Text = "3";
             this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3783,7 +3854,7 @@
             this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label94.Location = new System.Drawing.Point(628, 1);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(94, 34);
+            this.label94.Size = new System.Drawing.Size(94, 35);
             this.label94.TabIndex = 25;
             this.label94.Text = "1200";
             this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3884,7 +3955,7 @@
             this.TableBasicSalary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableBasicSalary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.TableBasicSalary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.TableBasicSalary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.TableBasicSalary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.TableBasicSalary.Controls.Add(this.LabelProgrammerAverageDaily, 2, 2);
             this.TableBasicSalary.Controls.Add(this.LabelSupervisorAverageDaily, 2, 1);
             this.TableBasicSalary.Controls.Add(this.LabelProgrammerDevelopmentTime, 3, 2);
@@ -3945,7 +4016,7 @@
             this.LabelProgrammerOZP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelProgrammerOZP.Location = new System.Drawing.Point(458, 78);
             this.LabelProgrammerOZP.Name = "LabelProgrammerOZP";
-            this.LabelProgrammerOZP.Size = new System.Drawing.Size(105, 26);
+            this.LabelProgrammerOZP.Size = new System.Drawing.Size(106, 26);
             this.LabelProgrammerOZP.TabIndex = 15;
             this.LabelProgrammerOZP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3965,7 +4036,7 @@
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label78.Location = new System.Drawing.Point(458, 1);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(105, 50);
+            this.label78.Size = new System.Drawing.Size(106, 50);
             this.label78.TabIndex = 6;
             this.label78.Text = "ОЗП, руб.";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4055,7 +4126,7 @@
             this.LabelSupervisorOZP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelSupervisorOZP.Location = new System.Drawing.Point(458, 52);
             this.LabelSupervisorOZP.Name = "LabelSupervisorOZP";
-            this.LabelSupervisorOZP.Size = new System.Drawing.Size(105, 25);
+            this.LabelSupervisorOZP.Size = new System.Drawing.Size(106, 25);
             this.LabelSupervisorOZP.TabIndex = 14;
             this.LabelSupervisorOZP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4079,42 +4150,567 @@
             this.TabOperatingCosts.Text = "Расчет эксплуатационных затрат";
             this.TabOperatingCosts.UseVisualStyleBackColor = true;
             // 
-            // TabEconomicEfficiency
+            // panel13
             // 
-            this.TabEconomicEfficiency.Location = new System.Drawing.Point(4, 22);
-            this.TabEconomicEfficiency.Name = "TabEconomicEfficiency";
-            this.TabEconomicEfficiency.Size = new System.Drawing.Size(979, 578);
-            this.TabEconomicEfficiency.TabIndex = 4;
-            this.TabEconomicEfficiency.Text = "Расчет показателей экономической эффективности";
-            this.TabEconomicEfficiency.UseVisualStyleBackColor = true;
+            this.panel13.AutoScroll = true;
+            this.panel13.Controls.Add(this.panel15);
+            this.panel13.Controls.Add(this.panel14);
+            this.panel13.Controls.Add(this.panel11);
+            this.panel13.Controls.Add(this.panel12);
+            this.panel13.Controls.Add(this.label131);
+            this.panel13.Controls.Add(this.TextSocialCoef2);
+            this.panel13.Controls.Add(this.NumericWorkDays);
+            this.panel13.Controls.Add(this.label137);
+            this.panel13.Controls.Add(this.label133);
+            this.panel13.Controls.Add(this.TextDistrictCoefficient2);
+            this.panel13.Location = new System.Drawing.Point(3, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(973, 572);
+            this.panel13.TabIndex = 13;
             // 
-            // label130
+            // panel15
             // 
-            this.label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label130.Location = new System.Drawing.Point(6, 99);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(465, 23);
-            this.label130.TabIndex = 8;
-            this.label130.Text = "Итого: ";
-            this.label130.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.ButtonAnnualOperatingCostsCalculate);
+            this.panel15.Controls.Add(this.LabelAnalogueAnnualOperatingCostsResult);
+            this.panel15.Controls.Add(this.LabelProjectAnnualOperatingCostsResult);
+            this.panel15.Controls.Add(this.label191);
+            this.panel15.Controls.Add(this.TableAnnualOperatingCosts);
+            this.panel15.Controls.Add(this.label169);
+            this.panel15.Location = new System.Drawing.Point(374, 406);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(578, 275);
+            this.panel15.TabIndex = 14;
             // 
-            // LabelImplementingAnalogueCostResult
+            // ButtonAnnualOperatingCostsCalculate
             // 
-            this.LabelImplementingAnalogueCostResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabelImplementingAnalogueCostResult.Location = new System.Drawing.Point(478, 99);
-            this.LabelImplementingAnalogueCostResult.Name = "LabelImplementingAnalogueCostResult";
-            this.LabelImplementingAnalogueCostResult.Size = new System.Drawing.Size(227, 23);
-            this.LabelImplementingAnalogueCostResult.TabIndex = 9;
-            this.LabelImplementingAnalogueCostResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonAnnualOperatingCostsCalculate.Location = new System.Drawing.Point(3, 246);
+            this.ButtonAnnualOperatingCostsCalculate.Name = "ButtonAnnualOperatingCostsCalculate";
+            this.ButtonAnnualOperatingCostsCalculate.Size = new System.Drawing.Size(570, 23);
+            this.ButtonAnnualOperatingCostsCalculate.TabIndex = 11;
+            this.ButtonAnnualOperatingCostsCalculate.Text = "Посчитать";
+            this.ButtonAnnualOperatingCostsCalculate.UseVisualStyleBackColor = true;
             // 
-            // ButtonImplementingAnalogueCostCalculate
+            // LabelAnalogueAnnualOperatingCostsResult
             // 
-            this.ButtonImplementingAnalogueCostCalculate.Location = new System.Drawing.Point(712, 99);
-            this.ButtonImplementingAnalogueCostCalculate.Name = "ButtonImplementingAnalogueCostCalculate";
-            this.ButtonImplementingAnalogueCostCalculate.Size = new System.Drawing.Size(230, 23);
-            this.ButtonImplementingAnalogueCostCalculate.TabIndex = 10;
-            this.ButtonImplementingAnalogueCostCalculate.Text = "Посчитать";
-            this.ButtonImplementingAnalogueCostCalculate.UseVisualStyleBackColor = true;
+            this.LabelAnalogueAnnualOperatingCostsResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelAnalogueAnnualOperatingCostsResult.Location = new System.Drawing.Point(436, 220);
+            this.LabelAnalogueAnnualOperatingCostsResult.Name = "LabelAnalogueAnnualOperatingCostsResult";
+            this.LabelAnalogueAnnualOperatingCostsResult.Size = new System.Drawing.Size(133, 23);
+            this.LabelAnalogueAnnualOperatingCostsResult.TabIndex = 10;
+            this.LabelAnalogueAnnualOperatingCostsResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelProjectAnnualOperatingCostsResult
+            // 
+            this.LabelProjectAnnualOperatingCostsResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelProjectAnnualOperatingCostsResult.Location = new System.Drawing.Point(294, 220);
+            this.LabelProjectAnnualOperatingCostsResult.Name = "LabelProjectAnnualOperatingCostsResult";
+            this.LabelProjectAnnualOperatingCostsResult.Size = new System.Drawing.Size(132, 23);
+            this.LabelProjectAnnualOperatingCostsResult.TabIndex = 9;
+            this.LabelProjectAnnualOperatingCostsResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label191
+            // 
+            this.label191.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label191.Location = new System.Drawing.Point(3, 220);
+            this.label191.Name = "label191";
+            this.label191.Size = new System.Drawing.Size(281, 23);
+            this.label191.TabIndex = 8;
+            this.label191.Text = "Годовые эксплуатационные затраты";
+            this.label191.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TableAnnualOperatingCosts
+            // 
+            this.TableAnnualOperatingCosts.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.TableAnnualOperatingCosts.ColumnCount = 3;
+            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TableAnnualOperatingCosts.Controls.Add(this.label190, 2, 6);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label189, 1, 6);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label188, 0, 6);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label187, 2, 5);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label186, 1, 5);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label185, 0, 5);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label184, 2, 4);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label183, 1, 4);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label182, 0, 4);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label181, 2, 3);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label180, 1, 3);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label179, 0, 3);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label178, 2, 2);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label177, 1, 2);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label176, 0, 2);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label175, 2, 1);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label174, 1, 1);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label173, 0, 1);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label172, 2, 0);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label171, 1, 0);
+            this.TableAnnualOperatingCosts.Controls.Add(this.label170, 0, 0);
+            this.TableAnnualOperatingCosts.Location = new System.Drawing.Point(3, 26);
+            this.TableAnnualOperatingCosts.Name = "TableAnnualOperatingCosts";
+            this.TableAnnualOperatingCosts.RowCount = 7;
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableAnnualOperatingCosts.Size = new System.Drawing.Size(570, 191);
+            this.TableAnnualOperatingCosts.TabIndex = 7;
+            // 
+            // label190
+            // 
+            this.label190.AutoSize = true;
+            this.label190.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label190.Location = new System.Drawing.Point(430, 163);
+            this.label190.Name = "label190";
+            this.label190.Size = new System.Drawing.Size(136, 27);
+            this.label190.TabIndex = 20;
+            this.label190.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label189.Location = new System.Drawing.Point(288, 163);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(135, 27);
+            this.label189.TabIndex = 19;
+            this.label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label188.Location = new System.Drawing.Point(4, 163);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(277, 27);
+            this.label188.TabIndex = 18;
+            this.label188.Text = "Накладные расходы";
+            this.label188.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label187.Location = new System.Drawing.Point(430, 136);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(136, 26);
+            this.label187.TabIndex = 17;
+            this.label187.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label186
+            // 
+            this.label186.AutoSize = true;
+            this.label186.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label186.Location = new System.Drawing.Point(288, 136);
+            this.label186.Name = "label186";
+            this.label186.Size = new System.Drawing.Size(135, 26);
+            this.label186.TabIndex = 16;
+            this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label185
+            // 
+            this.label185.AutoSize = true;
+            this.label185.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label185.Location = new System.Drawing.Point(4, 136);
+            this.label185.Name = "label185";
+            this.label185.Size = new System.Drawing.Size(277, 26);
+            this.label185.TabIndex = 15;
+            this.label185.Text = "Затраты на материалы";
+            this.label185.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label184
+            // 
+            this.label184.AutoSize = true;
+            this.label184.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label184.Location = new System.Drawing.Point(430, 109);
+            this.label184.Name = "label184";
+            this.label184.Size = new System.Drawing.Size(136, 26);
+            this.label184.TabIndex = 14;
+            this.label184.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label183
+            // 
+            this.label183.AutoSize = true;
+            this.label183.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label183.Location = new System.Drawing.Point(288, 109);
+            this.label183.Name = "label183";
+            this.label183.Size = new System.Drawing.Size(135, 26);
+            this.label183.TabIndex = 13;
+            this.label183.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label182
+            // 
+            this.label182.AutoSize = true;
+            this.label182.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label182.Location = new System.Drawing.Point(4, 109);
+            this.label182.Name = "label182";
+            this.label182.Size = new System.Drawing.Size(277, 26);
+            this.label182.TabIndex = 12;
+            this.label182.Text = "Затраты на текущий ремонт";
+            this.label182.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label181
+            // 
+            this.label181.AutoSize = true;
+            this.label181.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label181.Location = new System.Drawing.Point(430, 82);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(136, 26);
+            this.label181.TabIndex = 11;
+            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label180.Location = new System.Drawing.Point(288, 82);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(135, 26);
+            this.label180.TabIndex = 10;
+            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label179
+            // 
+            this.label179.AutoSize = true;
+            this.label179.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label179.Location = new System.Drawing.Point(4, 82);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(277, 26);
+            this.label179.TabIndex = 9;
+            this.label179.Text = "Затраты на электроэнергию";
+            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label178
+            // 
+            this.label178.AutoSize = true;
+            this.label178.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label178.Location = new System.Drawing.Point(430, 55);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(136, 26);
+            this.label178.TabIndex = 8;
+            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label177
+            // 
+            this.label177.AutoSize = true;
+            this.label177.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label177.Location = new System.Drawing.Point(288, 55);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(135, 26);
+            this.label177.TabIndex = 7;
+            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label176.Location = new System.Drawing.Point(4, 55);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(277, 26);
+            this.label176.TabIndex = 6;
+            this.label176.Text = "Амортизационные отчисления";
+            this.label176.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label175.Location = new System.Drawing.Point(430, 28);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(136, 26);
+            this.label175.TabIndex = 5;
+            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label174.Location = new System.Drawing.Point(288, 28);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(135, 26);
+            this.label174.TabIndex = 4;
+            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label173.Location = new System.Drawing.Point(4, 28);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(277, 26);
+            this.label173.TabIndex = 3;
+            this.label173.Text = "Основная и дополнительная зарплата с отчислениями";
+            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label172.Location = new System.Drawing.Point(430, 1);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(136, 26);
+            this.label172.TabIndex = 2;
+            this.label172.Text = "Затраты на аналог, руб.";
+            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label171
+            // 
+            this.label171.AutoSize = true;
+            this.label171.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label171.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label171.Location = new System.Drawing.Point(288, 1);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(135, 26);
+            this.label171.TabIndex = 1;
+            this.label171.Text = "Затраты на проект, руб.";
+            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label170
+            // 
+            this.label170.AutoSize = true;
+            this.label170.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label170.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label170.Location = new System.Drawing.Point(4, 1);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(277, 26);
+            this.label170.TabIndex = 0;
+            this.label170.Text = "Статьи затрат";
+            this.label170.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label169
+            // 
+            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label169.Location = new System.Drawing.Point(-1, 0);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(578, 23);
+            this.label169.TabIndex = 6;
+            this.label169.Text = "Годовые эксплуатационные затраты";
+            this.label169.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.tableLayoutPanel4);
+            this.panel14.Controls.Add(this.label148);
+            this.panel14.Location = new System.Drawing.Point(7, 405);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(361, 276);
+            this.panel14.TabIndex = 13;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.875F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.125F));
+            this.tableLayoutPanel4.Controls.Add(this.TextMaterialCostStandard, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.TextRepairCostStandard, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentPower, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.TextElectricityTariff, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentBookValue2, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.TextAverageDailyLoadStandard, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label161, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label162, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label163, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentBookValue, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label166, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label165, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.label167, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.label168, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.TextAnnualDepreciationRate, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.NumericEquipmentPiecesNumber, 1, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 26);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 8;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(353, 218);
+            this.tableLayoutPanel4.TabIndex = 6;
+            // 
+            // TextMaterialCostStandard
+            // 
+            this.TextMaterialCostStandard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextMaterialCostStandard.Location = new System.Drawing.Point(256, 193);
+            this.TextMaterialCostStandard.Name = "TextMaterialCostStandard";
+            this.TextMaterialCostStandard.Size = new System.Drawing.Size(93, 20);
+            this.TextMaterialCostStandard.TabIndex = 22;
+            this.TextMaterialCostStandard.Text = "0,01";
+            // 
+            // TextRepairCostStandard
+            // 
+            this.TextRepairCostStandard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextRepairCostStandard.Location = new System.Drawing.Point(256, 166);
+            this.TextRepairCostStandard.Name = "TextRepairCostStandard";
+            this.TextRepairCostStandard.Size = new System.Drawing.Size(93, 20);
+            this.TextRepairCostStandard.TabIndex = 21;
+            this.TextRepairCostStandard.Text = "0,05";
+            // 
+            // TextEquipmentPower
+            // 
+            this.TextEquipmentPower.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextEquipmentPower.Location = new System.Drawing.Point(256, 139);
+            this.TextEquipmentPower.Name = "TextEquipmentPower";
+            this.TextEquipmentPower.Size = new System.Drawing.Size(93, 20);
+            this.TextEquipmentPower.TabIndex = 20;
+            this.TextEquipmentPower.Text = "0,4";
+            // 
+            // TextElectricityTariff
+            // 
+            this.TextElectricityTariff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextElectricityTariff.Location = new System.Drawing.Point(256, 112);
+            this.TextElectricityTariff.Name = "TextElectricityTariff";
+            this.TextElectricityTariff.Size = new System.Drawing.Size(93, 20);
+            this.TextElectricityTariff.TabIndex = 19;
+            this.TextElectricityTariff.Text = "2,6";
+            // 
+            // TextEquipmentBookValue2
+            // 
+            this.TextEquipmentBookValue2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextEquipmentBookValue2.Location = new System.Drawing.Point(256, 85);
+            this.TextEquipmentBookValue2.Name = "TextEquipmentBookValue2";
+            this.TextEquipmentBookValue2.Size = new System.Drawing.Size(93, 20);
+            this.TextEquipmentBookValue2.TabIndex = 18;
+            this.TextEquipmentBookValue2.Text = "22500";
+            // 
+            // TextAverageDailyLoadStandard
+            // 
+            this.TextAverageDailyLoadStandard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextAverageDailyLoadStandard.Location = new System.Drawing.Point(256, 31);
+            this.TextAverageDailyLoadStandard.Name = "TextAverageDailyLoadStandard";
+            this.TextAverageDailyLoadStandard.Size = new System.Drawing.Size(93, 20);
+            this.TextAverageDailyLoadStandard.TabIndex = 16;
+            this.TextAverageDailyLoadStandard.Text = "8";
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label161.Location = new System.Drawing.Point(4, 1);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(245, 26);
+            this.label161.TabIndex = 7;
+            this.label161.Text = "Норма годовых амортизационных отчислений";
+            this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label162.Location = new System.Drawing.Point(4, 28);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(245, 26);
+            this.label162.TabIndex = 8;
+            this.label162.Text = "Норматив среднесуточной нагрузки, час/день";
+            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label163.Location = new System.Drawing.Point(4, 55);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(245, 26);
+            this.label163.TabIndex = 9;
+            this.label163.Text = "Количество единиц оборудования, шт.";
+            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextEquipmentBookValue
+            // 
+            this.TextEquipmentBookValue.AutoSize = true;
+            this.TextEquipmentBookValue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextEquipmentBookValue.Location = new System.Drawing.Point(4, 82);
+            this.TextEquipmentBookValue.Name = "TextEquipmentBookValue";
+            this.TextEquipmentBookValue.Size = new System.Drawing.Size(245, 26);
+            this.TextEquipmentBookValue.TabIndex = 10;
+            this.TextEquipmentBookValue.Text = "Балансовая стоимость оборудования, руб.";
+            this.TextEquipmentBookValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label166.Location = new System.Drawing.Point(4, 109);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(245, 26);
+            this.label166.TabIndex = 12;
+            this.label166.Text = "Тариф на электроэнергию руб/кВт ч";
+            this.label166.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label165.Location = new System.Drawing.Point(4, 136);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(245, 26);
+            this.label165.TabIndex = 11;
+            this.label165.Text = "Мощность оборудования, кВт";
+            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label167.Location = new System.Drawing.Point(4, 163);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(245, 26);
+            this.label167.TabIndex = 13;
+            this.label167.Text = "Норматив затрат на ремонт";
+            this.label167.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label168.Location = new System.Drawing.Point(4, 190);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(245, 27);
+            this.label168.TabIndex = 14;
+            this.label168.Text = "Норматив затрат на материалы";
+            this.label168.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextAnnualDepreciationRate
+            // 
+            this.TextAnnualDepreciationRate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextAnnualDepreciationRate.Location = new System.Drawing.Point(256, 4);
+            this.TextAnnualDepreciationRate.Name = "TextAnnualDepreciationRate";
+            this.TextAnnualDepreciationRate.Size = new System.Drawing.Size(93, 20);
+            this.TextAnnualDepreciationRate.TabIndex = 15;
+            this.TextAnnualDepreciationRate.Text = "0,2";
+            // 
+            // NumericEquipmentPiecesNumber
+            // 
+            this.NumericEquipmentPiecesNumber.Location = new System.Drawing.Point(256, 58);
+            this.NumericEquipmentPiecesNumber.Name = "NumericEquipmentPiecesNumber";
+            this.NumericEquipmentPiecesNumber.Size = new System.Drawing.Size(93, 20);
+            this.NumericEquipmentPiecesNumber.TabIndex = 23;
+            this.NumericEquipmentPiecesNumber.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label148
+            // 
+            this.label148.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label148.Location = new System.Drawing.Point(-1, 0);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(361, 23);
+            this.label148.TabIndex = 5;
+            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel11
             // 
@@ -4128,31 +4724,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(945, 169);
             this.panel11.TabIndex = 1;
-            // 
-            // NumericWorkDays
-            // 
-            this.NumericWorkDays.Location = new System.Drawing.Point(215, 9);
-            this.NumericWorkDays.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NumericWorkDays.Name = "NumericWorkDays";
-            this.NumericWorkDays.Size = new System.Drawing.Size(61, 20);
-            this.NumericWorkDays.TabIndex = 7;
-            this.NumericWorkDays.Value = new decimal(new int[] {
-            21,
-            0,
-            0,
-            0});
-            // 
-            // label131
-            // 
-            this.label131.Location = new System.Drawing.Point(18, 11);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(191, 17);
-            this.label131.TabIndex = 6;
-            this.label131.Text = "Количество рабочих дней в месяце:";
             // 
             // ButtonOurOperatingCostsCalculate
             // 
@@ -4224,6 +4795,15 @@
             this.TableOurOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.TableOurOperatingCosts.Size = new System.Drawing.Size(937, 105);
             this.TableOurOperatingCosts.TabIndex = 1;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox9.Location = new System.Drawing.Point(565, 81);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(180, 20);
+            this.textBox9.TabIndex = 21;
+            this.textBox9.Text = "20";
             // 
             // label135
             // 
@@ -4373,48 +4953,6 @@
             this.textBox8.Size = new System.Drawing.Size(180, 20);
             this.textBox8.TabIndex = 20;
             this.textBox8.Text = "40";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Location = new System.Drawing.Point(565, 81);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(180, 20);
-            this.textBox9.TabIndex = 21;
-            this.textBox9.Text = "20";
-            // 
-            // label133
-            // 
-            this.label133.Location = new System.Drawing.Point(307, 11);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(134, 17);
-            this.label133.TabIndex = 8;
-            this.label133.Text = "Районный коэффициент";
-            // 
-            // TextDistrictCoefficient2
-            // 
-            this.TextDistrictCoefficient2.Location = new System.Drawing.Point(447, 8);
-            this.TextDistrictCoefficient2.Name = "TextDistrictCoefficient2";
-            this.TextDistrictCoefficient2.Size = new System.Drawing.Size(100, 20);
-            this.TextDistrictCoefficient2.TabIndex = 9;
-            this.TextDistrictCoefficient2.Text = "0,4";
-            // 
-            // TextSocialCoef2
-            // 
-            this.TextSocialCoef2.Location = new System.Drawing.Point(856, 8);
-            this.TextSocialCoef2.Name = "TextSocialCoef2";
-            this.TextSocialCoef2.Size = new System.Drawing.Size(100, 20);
-            this.TextSocialCoef2.TabIndex = 11;
-            this.TextSocialCoef2.Text = "0,302";
-            // 
-            // label137
-            // 
-            this.label137.Location = new System.Drawing.Point(566, 11);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(284, 17);
-            this.label137.TabIndex = 10;
-            this.label137.Text = "Коэффициент отчислений на соц. нужды";
-            this.label137.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel12
             // 
@@ -4658,567 +5196,500 @@
             this.textBox13.TabIndex = 20;
             this.textBox13.Text = "60";
             // 
-            // panel13
+            // label131
             // 
-            this.panel13.AutoScroll = true;
-            this.panel13.Controls.Add(this.panel15);
-            this.panel13.Controls.Add(this.panel14);
-            this.panel13.Controls.Add(this.panel11);
-            this.panel13.Controls.Add(this.panel12);
-            this.panel13.Controls.Add(this.label131);
-            this.panel13.Controls.Add(this.TextSocialCoef2);
-            this.panel13.Controls.Add(this.NumericWorkDays);
-            this.panel13.Controls.Add(this.label137);
-            this.panel13.Controls.Add(this.label133);
-            this.panel13.Controls.Add(this.TextDistrictCoefficient2);
-            this.panel13.Location = new System.Drawing.Point(3, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(973, 572);
-            this.panel13.TabIndex = 13;
+            this.label131.Location = new System.Drawing.Point(18, 11);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(191, 17);
+            this.label131.TabIndex = 6;
+            this.label131.Text = "Количество рабочих дней в месяце:";
             // 
-            // panel14
+            // TextSocialCoef2
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.tableLayoutPanel4);
-            this.panel14.Controls.Add(this.label148);
-            this.panel14.Location = new System.Drawing.Point(7, 405);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(361, 306);
-            this.panel14.TabIndex = 13;
+            this.TextSocialCoef2.Location = new System.Drawing.Point(856, 8);
+            this.TextSocialCoef2.Name = "TextSocialCoef2";
+            this.TextSocialCoef2.Size = new System.Drawing.Size(100, 20);
+            this.TextSocialCoef2.TabIndex = 11;
+            this.TextSocialCoef2.Text = "0,302";
             // 
-            // label148
+            // NumericWorkDays
             // 
-            this.label148.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label148.Location = new System.Drawing.Point(-1, 0);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(361, 23);
-            this.label148.TabIndex = 5;
-            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.875F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.125F));
-            this.tableLayoutPanel4.Controls.Add(this.TextMaterialCostStandard, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.TextRepairCostStandard, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentPower, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.TextElectricityTariff, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentBookValue2, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.TextAverageDailyLoadStandard, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label161, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label162, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label163, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.TextEquipmentBookValue, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label166, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label165, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label167, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label168, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.TextAnnualDepreciationRate, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.NumericEquipmentPiecesNumber, 1, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 26);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 8;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(353, 218);
-            this.tableLayoutPanel4.TabIndex = 6;
-            // 
-            // label161
-            // 
-            this.label161.AutoSize = true;
-            this.label161.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label161.Location = new System.Drawing.Point(4, 1);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(245, 26);
-            this.label161.TabIndex = 7;
-            this.label161.Text = "Норма годовых амортизационных отчислений";
-            this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label162.Location = new System.Drawing.Point(4, 28);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(245, 26);
-            this.label162.TabIndex = 8;
-            this.label162.Text = "Норматив среднесуточной нагрузки, час/день";
-            this.label162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label163
-            // 
-            this.label163.AutoSize = true;
-            this.label163.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label163.Location = new System.Drawing.Point(4, 55);
-            this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(245, 26);
-            this.label163.TabIndex = 9;
-            this.label163.Text = "Количество единиц оборудования, шт.";
-            this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TextEquipmentBookValue
-            // 
-            this.TextEquipmentBookValue.AutoSize = true;
-            this.TextEquipmentBookValue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextEquipmentBookValue.Location = new System.Drawing.Point(4, 82);
-            this.TextEquipmentBookValue.Name = "TextEquipmentBookValue";
-            this.TextEquipmentBookValue.Size = new System.Drawing.Size(245, 26);
-            this.TextEquipmentBookValue.TabIndex = 10;
-            this.TextEquipmentBookValue.Text = "Балансовая стоимость оборудования, руб.";
-            this.TextEquipmentBookValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label165.Location = new System.Drawing.Point(4, 136);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(245, 26);
-            this.label165.TabIndex = 11;
-            this.label165.Text = "Мощность оборудования, кВт";
-            this.label165.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label166
-            // 
-            this.label166.AutoSize = true;
-            this.label166.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label166.Location = new System.Drawing.Point(4, 109);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(245, 26);
-            this.label166.TabIndex = 12;
-            this.label166.Text = "Тариф на электроэнергию руб/кВт ч";
-            this.label166.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label167.Location = new System.Drawing.Point(4, 163);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(245, 26);
-            this.label167.TabIndex = 13;
-            this.label167.Text = "Норматив затрат на ремонт";
-            this.label167.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label168.Location = new System.Drawing.Point(4, 190);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(245, 27);
-            this.label168.TabIndex = 14;
-            this.label168.Text = "Норматив затрат на материалы";
-            this.label168.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TextAnnualDepreciationRate
-            // 
-            this.TextAnnualDepreciationRate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextAnnualDepreciationRate.Location = new System.Drawing.Point(256, 4);
-            this.TextAnnualDepreciationRate.Name = "TextAnnualDepreciationRate";
-            this.TextAnnualDepreciationRate.Size = new System.Drawing.Size(93, 20);
-            this.TextAnnualDepreciationRate.TabIndex = 15;
-            this.TextAnnualDepreciationRate.Text = "0,2";
-            // 
-            // TextAverageDailyLoadStandard
-            // 
-            this.TextAverageDailyLoadStandard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextAverageDailyLoadStandard.Location = new System.Drawing.Point(256, 31);
-            this.TextAverageDailyLoadStandard.Name = "TextAverageDailyLoadStandard";
-            this.TextAverageDailyLoadStandard.Size = new System.Drawing.Size(93, 20);
-            this.TextAverageDailyLoadStandard.TabIndex = 16;
-            this.TextAverageDailyLoadStandard.Text = "8";
-            // 
-            // TextEquipmentBookValue2
-            // 
-            this.TextEquipmentBookValue2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextEquipmentBookValue2.Location = new System.Drawing.Point(256, 85);
-            this.TextEquipmentBookValue2.Name = "TextEquipmentBookValue2";
-            this.TextEquipmentBookValue2.Size = new System.Drawing.Size(93, 20);
-            this.TextEquipmentBookValue2.TabIndex = 18;
-            this.TextEquipmentBookValue2.Text = "22500";
-            // 
-            // TextElectricityTariff
-            // 
-            this.TextElectricityTariff.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextElectricityTariff.Location = new System.Drawing.Point(256, 112);
-            this.TextElectricityTariff.Name = "TextElectricityTariff";
-            this.TextElectricityTariff.Size = new System.Drawing.Size(93, 20);
-            this.TextElectricityTariff.TabIndex = 19;
-            this.TextElectricityTariff.Text = "2,6";
-            // 
-            // TextEquipmentPower
-            // 
-            this.TextEquipmentPower.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextEquipmentPower.Location = new System.Drawing.Point(256, 139);
-            this.TextEquipmentPower.Name = "TextEquipmentPower";
-            this.TextEquipmentPower.Size = new System.Drawing.Size(93, 20);
-            this.TextEquipmentPower.TabIndex = 20;
-            this.TextEquipmentPower.Text = "0,4";
-            // 
-            // TextRepairCostStandard
-            // 
-            this.TextRepairCostStandard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextRepairCostStandard.Location = new System.Drawing.Point(256, 166);
-            this.TextRepairCostStandard.Name = "TextRepairCostStandard";
-            this.TextRepairCostStandard.Size = new System.Drawing.Size(93, 20);
-            this.TextRepairCostStandard.TabIndex = 21;
-            this.TextRepairCostStandard.Text = "0,05";
-            // 
-            // TextMaterialCostStandard
-            // 
-            this.TextMaterialCostStandard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextMaterialCostStandard.Location = new System.Drawing.Point(256, 193);
-            this.TextMaterialCostStandard.Name = "TextMaterialCostStandard";
-            this.TextMaterialCostStandard.Size = new System.Drawing.Size(93, 20);
-            this.TextMaterialCostStandard.TabIndex = 22;
-            this.TextMaterialCostStandard.Text = "0,01";
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.ButtonAnnualOperatingCostsCalculate);
-            this.panel15.Controls.Add(this.LabelAnalogueAnnualOperatingCostsResult);
-            this.panel15.Controls.Add(this.LabelProjectAnnualOperatingCostsResult);
-            this.panel15.Controls.Add(this.label191);
-            this.panel15.Controls.Add(this.TableAnnualOperatingCosts);
-            this.panel15.Controls.Add(this.label169);
-            this.panel15.Location = new System.Drawing.Point(374, 406);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(578, 305);
-            this.panel15.TabIndex = 14;
-            // 
-            // label169
-            // 
-            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label169.Location = new System.Drawing.Point(-1, 0);
-            this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(578, 23);
-            this.label169.TabIndex = 6;
-            this.label169.Text = "Годовые эксплуатационные затраты";
-            this.label169.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TableAnnualOperatingCosts
-            // 
-            this.TableAnnualOperatingCosts.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.TableAnnualOperatingCosts.ColumnCount = 3;
-            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TableAnnualOperatingCosts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TableAnnualOperatingCosts.Controls.Add(this.label190, 2, 6);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label189, 1, 6);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label188, 0, 6);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label187, 2, 5);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label186, 1, 5);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label185, 0, 5);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label184, 2, 4);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label183, 1, 4);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label182, 0, 4);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label181, 2, 3);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label180, 1, 3);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label179, 0, 3);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label178, 2, 2);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label177, 1, 2);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label176, 0, 2);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label175, 2, 1);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label174, 1, 1);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label173, 0, 1);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label172, 2, 0);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label171, 1, 0);
-            this.TableAnnualOperatingCosts.Controls.Add(this.label170, 0, 0);
-            this.TableAnnualOperatingCosts.Location = new System.Drawing.Point(3, 26);
-            this.TableAnnualOperatingCosts.Name = "TableAnnualOperatingCosts";
-            this.TableAnnualOperatingCosts.RowCount = 7;
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.TableAnnualOperatingCosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TableAnnualOperatingCosts.Size = new System.Drawing.Size(570, 191);
-            this.TableAnnualOperatingCosts.TabIndex = 7;
-            // 
-            // label170
-            // 
-            this.label170.AutoSize = true;
-            this.label170.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label170.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label170.Location = new System.Drawing.Point(4, 1);
-            this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(277, 26);
-            this.label170.TabIndex = 0;
-            this.label170.Text = "Статьи затрат";
-            this.label170.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label171
-            // 
-            this.label171.AutoSize = true;
-            this.label171.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label171.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label171.Location = new System.Drawing.Point(288, 1);
-            this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(135, 26);
-            this.label171.TabIndex = 1;
-            this.label171.Text = "Затраты на проект, руб.";
-            this.label171.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label172.Location = new System.Drawing.Point(430, 1);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(136, 26);
-            this.label172.TabIndex = 2;
-            this.label172.Text = "Затраты на аналог, руб.";
-            this.label172.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label173.Location = new System.Drawing.Point(4, 28);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(277, 26);
-            this.label173.TabIndex = 3;
-            this.label173.Text = "Основная и дополнительная зарплата с отчислениями";
-            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label174.Location = new System.Drawing.Point(288, 28);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(135, 26);
-            this.label174.TabIndex = 4;
-            this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label175.Location = new System.Drawing.Point(430, 28);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(136, 26);
-            this.label175.TabIndex = 5;
-            this.label175.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label176.Location = new System.Drawing.Point(4, 55);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(277, 26);
-            this.label176.TabIndex = 6;
-            this.label176.Text = "Амортизационные отчисления";
-            this.label176.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label177
-            // 
-            this.label177.AutoSize = true;
-            this.label177.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label177.Location = new System.Drawing.Point(288, 55);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(135, 26);
-            this.label177.TabIndex = 7;
-            this.label177.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label178
-            // 
-            this.label178.AutoSize = true;
-            this.label178.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label178.Location = new System.Drawing.Point(430, 55);
-            this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(136, 26);
-            this.label178.TabIndex = 8;
-            this.label178.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label179
-            // 
-            this.label179.AutoSize = true;
-            this.label179.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label179.Location = new System.Drawing.Point(4, 82);
-            this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(277, 26);
-            this.label179.TabIndex = 9;
-            this.label179.Text = "Затраты на электроэнергию";
-            this.label179.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label180
-            // 
-            this.label180.AutoSize = true;
-            this.label180.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label180.Location = new System.Drawing.Point(288, 82);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(135, 26);
-            this.label180.TabIndex = 10;
-            this.label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label181
-            // 
-            this.label181.AutoSize = true;
-            this.label181.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label181.Location = new System.Drawing.Point(430, 82);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(136, 26);
-            this.label181.TabIndex = 11;
-            this.label181.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label182
-            // 
-            this.label182.AutoSize = true;
-            this.label182.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label182.Location = new System.Drawing.Point(4, 109);
-            this.label182.Name = "label182";
-            this.label182.Size = new System.Drawing.Size(277, 26);
-            this.label182.TabIndex = 12;
-            this.label182.Text = "Затраты на текущий ремонт";
-            this.label182.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label183
-            // 
-            this.label183.AutoSize = true;
-            this.label183.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label183.Location = new System.Drawing.Point(288, 109);
-            this.label183.Name = "label183";
-            this.label183.Size = new System.Drawing.Size(135, 26);
-            this.label183.TabIndex = 13;
-            this.label183.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label184
-            // 
-            this.label184.AutoSize = true;
-            this.label184.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label184.Location = new System.Drawing.Point(430, 109);
-            this.label184.Name = "label184";
-            this.label184.Size = new System.Drawing.Size(136, 26);
-            this.label184.TabIndex = 14;
-            this.label184.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label185
-            // 
-            this.label185.AutoSize = true;
-            this.label185.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label185.Location = new System.Drawing.Point(4, 136);
-            this.label185.Name = "label185";
-            this.label185.Size = new System.Drawing.Size(277, 26);
-            this.label185.TabIndex = 15;
-            this.label185.Text = "Затраты на материалы";
-            this.label185.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label186
-            // 
-            this.label186.AutoSize = true;
-            this.label186.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label186.Location = new System.Drawing.Point(288, 136);
-            this.label186.Name = "label186";
-            this.label186.Size = new System.Drawing.Size(135, 26);
-            this.label186.TabIndex = 16;
-            this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label187.Location = new System.Drawing.Point(430, 136);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(136, 26);
-            this.label187.TabIndex = 17;
-            this.label187.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label188.Location = new System.Drawing.Point(4, 163);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(277, 27);
-            this.label188.TabIndex = 18;
-            this.label188.Text = "Накладные расходы";
-            this.label188.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label189.Location = new System.Drawing.Point(288, 163);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(135, 27);
-            this.label189.TabIndex = 19;
-            this.label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label190
-            // 
-            this.label190.AutoSize = true;
-            this.label190.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label190.Location = new System.Drawing.Point(430, 163);
-            this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(136, 27);
-            this.label190.TabIndex = 20;
-            this.label190.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label191
-            // 
-            this.label191.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label191.Location = new System.Drawing.Point(3, 220);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(281, 23);
-            this.label191.TabIndex = 8;
-            this.label191.Text = "Годовые эксплуатационные затраты";
-            this.label191.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelProjectAnnualOperatingCostsResult
-            // 
-            this.LabelProjectAnnualOperatingCostsResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabelProjectAnnualOperatingCostsResult.Location = new System.Drawing.Point(294, 220);
-            this.LabelProjectAnnualOperatingCostsResult.Name = "LabelProjectAnnualOperatingCostsResult";
-            this.LabelProjectAnnualOperatingCostsResult.Size = new System.Drawing.Size(132, 23);
-            this.LabelProjectAnnualOperatingCostsResult.TabIndex = 9;
-            this.LabelProjectAnnualOperatingCostsResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LabelAnalogueAnnualOperatingCostsResult
-            // 
-            this.LabelAnalogueAnnualOperatingCostsResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabelAnalogueAnnualOperatingCostsResult.Location = new System.Drawing.Point(436, 220);
-            this.LabelAnalogueAnnualOperatingCostsResult.Name = "LabelAnalogueAnnualOperatingCostsResult";
-            this.LabelAnalogueAnnualOperatingCostsResult.Size = new System.Drawing.Size(133, 23);
-            this.LabelAnalogueAnnualOperatingCostsResult.TabIndex = 10;
-            this.LabelAnalogueAnnualOperatingCostsResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ButtonAnnualOperatingCostsCalculate
-            // 
-            this.ButtonAnnualOperatingCostsCalculate.Location = new System.Drawing.Point(3, 246);
-            this.ButtonAnnualOperatingCostsCalculate.Name = "ButtonAnnualOperatingCostsCalculate";
-            this.ButtonAnnualOperatingCostsCalculate.Size = new System.Drawing.Size(570, 23);
-            this.ButtonAnnualOperatingCostsCalculate.TabIndex = 11;
-            this.ButtonAnnualOperatingCostsCalculate.Text = "Посчитать";
-            this.ButtonAnnualOperatingCostsCalculate.UseVisualStyleBackColor = true;
-            // 
-            // NumericEquipmentPiecesNumber
-            // 
-            this.NumericEquipmentPiecesNumber.Location = new System.Drawing.Point(256, 58);
-            this.NumericEquipmentPiecesNumber.Name = "NumericEquipmentPiecesNumber";
-            this.NumericEquipmentPiecesNumber.Size = new System.Drawing.Size(93, 20);
-            this.NumericEquipmentPiecesNumber.TabIndex = 23;
-            this.NumericEquipmentPiecesNumber.Value = new decimal(new int[] {
+            this.NumericWorkDays.Location = new System.Drawing.Point(215, 9);
+            this.NumericWorkDays.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.NumericWorkDays.Name = "NumericWorkDays";
+            this.NumericWorkDays.Size = new System.Drawing.Size(61, 20);
+            this.NumericWorkDays.TabIndex = 7;
+            this.NumericWorkDays.Value = new decimal(new int[] {
+            21,
+            0,
+            0,
+            0});
+            // 
+            // label137
+            // 
+            this.label137.Location = new System.Drawing.Point(566, 11);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(284, 17);
+            this.label137.TabIndex = 10;
+            this.label137.Text = "Коэффициент отчислений на соц. нужды";
+            this.label137.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label133
+            // 
+            this.label133.Location = new System.Drawing.Point(307, 11);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(134, 17);
+            this.label133.TabIndex = 8;
+            this.label133.Text = "Районный коэффициент";
+            // 
+            // TextDistrictCoefficient2
+            // 
+            this.TextDistrictCoefficient2.Location = new System.Drawing.Point(447, 8);
+            this.TextDistrictCoefficient2.Name = "TextDistrictCoefficient2";
+            this.TextDistrictCoefficient2.Size = new System.Drawing.Size(100, 20);
+            this.TextDistrictCoefficient2.TabIndex = 9;
+            this.TextDistrictCoefficient2.Text = "0,4";
+            // 
+            // TabEconomicEfficiency
+            // 
+            this.TabEconomicEfficiency.Controls.Add(this.panel16);
+            this.TabEconomicEfficiency.Location = new System.Drawing.Point(4, 22);
+            this.TabEconomicEfficiency.Name = "TabEconomicEfficiency";
+            this.TabEconomicEfficiency.Size = new System.Drawing.Size(979, 578);
+            this.TabEconomicEfficiency.TabIndex = 4;
+            this.TabEconomicEfficiency.Text = "Расчет показателей экономической эффективности";
+            this.TabEconomicEfficiency.UseVisualStyleBackColor = true;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.LabelResultMessage);
+            this.panel16.Controls.Add(this.ButtonEconomicEffectCalculate);
+            this.panel16.Controls.Add(this.panel18);
+            this.panel16.Controls.Add(this.TextInvestmentRatio);
+            this.panel16.Controls.Add(this.label206);
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Location = new System.Drawing.Point(3, 3);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(973, 572);
+            this.panel16.TabIndex = 0;
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.LabelEconomicEffectResult);
+            this.panel17.Controls.Add(this.label204);
+            this.panel17.Controls.Add(this.label164);
+            this.panel17.Controls.Add(this.TableEconomicEffect);
+            this.panel17.Location = new System.Drawing.Point(3, 37);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(967, 168);
+            this.panel17.TabIndex = 0;
+            // 
+            // TableEconomicEffect
+            // 
+            this.TableEconomicEffect.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.TableEconomicEffect.ColumnCount = 3;
+            this.TableEconomicEffect.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.TableEconomicEffect.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.TableEconomicEffect.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.TableEconomicEffect.Controls.Add(this.label203, 2, 3);
+            this.TableEconomicEffect.Controls.Add(this.label202, 1, 3);
+            this.TableEconomicEffect.Controls.Add(this.label201, 0, 3);
+            this.TableEconomicEffect.Controls.Add(this.label200, 2, 2);
+            this.TableEconomicEffect.Controls.Add(this.label199, 1, 2);
+            this.TableEconomicEffect.Controls.Add(this.label198, 0, 2);
+            this.TableEconomicEffect.Controls.Add(this.label197, 2, 1);
+            this.TableEconomicEffect.Controls.Add(this.label196, 1, 1);
+            this.TableEconomicEffect.Controls.Add(this.label195, 0, 1);
+            this.TableEconomicEffect.Controls.Add(this.label194, 2, 0);
+            this.TableEconomicEffect.Controls.Add(this.label193, 1, 0);
+            this.TableEconomicEffect.Controls.Add(this.label192, 0, 0);
+            this.TableEconomicEffect.Location = new System.Drawing.Point(3, 26);
+            this.TableEconomicEffect.Name = "TableEconomicEffect";
+            this.TableEconomicEffect.RowCount = 4;
+            this.TableEconomicEffect.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableEconomicEffect.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableEconomicEffect.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableEconomicEffect.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableEconomicEffect.Size = new System.Drawing.Size(959, 110);
+            this.TableEconomicEffect.TabIndex = 0;
+            // 
+            // label164
+            // 
+            this.label164.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label164.Location = new System.Drawing.Point(-1, 0);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(967, 23);
+            this.label164.TabIndex = 7;
+            this.label164.Text = "Экономический эффект";
+            this.label164.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label192
+            // 
+            this.label192.AutoSize = true;
+            this.label192.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label192.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label192.Location = new System.Drawing.Point(4, 1);
+            this.label192.Name = "label192";
+            this.label192.Size = new System.Drawing.Size(567, 26);
+            this.label192.TabIndex = 0;
+            this.label192.Text = "Характеристика";
+            this.label192.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label193
+            // 
+            this.label193.AutoSize = true;
+            this.label193.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label193.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label193.Location = new System.Drawing.Point(578, 1);
+            this.label193.Name = "label193";
+            this.label193.Size = new System.Drawing.Size(185, 26);
+            this.label193.TabIndex = 1;
+            this.label193.Text = "Значения продукта-аналога";
+            this.label193.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label194
+            // 
+            this.label194.AutoSize = true;
+            this.label194.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label194.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label194.Location = new System.Drawing.Point(770, 1);
+            this.label194.Name = "label194";
+            this.label194.Size = new System.Drawing.Size(185, 26);
+            this.label194.TabIndex = 2;
+            this.label194.Text = "Значения разрабатываемого продукта";
+            this.label194.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label195
+            // 
+            this.label195.AutoSize = true;
+            this.label195.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label195.Location = new System.Drawing.Point(4, 28);
+            this.label195.Name = "label195";
+            this.label195.Size = new System.Drawing.Size(567, 26);
+            this.label195.TabIndex = 3;
+            this.label195.Text = "Себестоимость (текущие эксплуатационные затраты), руб.";
+            this.label195.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label196
+            // 
+            this.label196.AutoSize = true;
+            this.label196.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label196.Location = new System.Drawing.Point(578, 28);
+            this.label196.Name = "label196";
+            this.label196.Size = new System.Drawing.Size(185, 26);
+            this.label196.TabIndex = 4;
+            this.label196.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label197
+            // 
+            this.label197.AutoSize = true;
+            this.label197.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label197.Location = new System.Drawing.Point(770, 28);
+            this.label197.Name = "label197";
+            this.label197.Size = new System.Drawing.Size(185, 26);
+            this.label197.TabIndex = 5;
+            this.label197.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label198
+            // 
+            this.label198.AutoSize = true;
+            this.label198.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label198.Location = new System.Drawing.Point(4, 55);
+            this.label198.Name = "label198";
+            this.label198.Size = new System.Drawing.Size(567, 26);
+            this.label198.TabIndex = 6;
+            this.label198.Text = "Суммарные затраты, связанные с внедрением проекта, руб.";
+            this.label198.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label199
+            // 
+            this.label199.AutoSize = true;
+            this.label199.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label199.Location = new System.Drawing.Point(578, 55);
+            this.label199.Name = "label199";
+            this.label199.Size = new System.Drawing.Size(185, 26);
+            this.label199.TabIndex = 7;
+            this.label199.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label200
+            // 
+            this.label200.AutoSize = true;
+            this.label200.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label200.Location = new System.Drawing.Point(770, 55);
+            this.label200.Name = "label200";
+            this.label200.Size = new System.Drawing.Size(185, 26);
+            this.label200.TabIndex = 8;
+            this.label200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label201
+            // 
+            this.label201.AutoSize = true;
+            this.label201.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label201.Location = new System.Drawing.Point(4, 82);
+            this.label201.Name = "label201";
+            this.label201.Size = new System.Drawing.Size(567, 27);
+            this.label201.TabIndex = 9;
+            this.label201.Text = "Приведенные затраты на единицу работ, руб.";
+            this.label201.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label202
+            // 
+            this.label202.AutoSize = true;
+            this.label202.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label202.Location = new System.Drawing.Point(578, 82);
+            this.label202.Name = "label202";
+            this.label202.Size = new System.Drawing.Size(185, 27);
+            this.label202.TabIndex = 10;
+            this.label202.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label203
+            // 
+            this.label203.AutoSize = true;
+            this.label203.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label203.Location = new System.Drawing.Point(770, 82);
+            this.label203.Name = "label203";
+            this.label203.Size = new System.Drawing.Size(185, 27);
+            this.label203.TabIndex = 11;
+            this.label203.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label204
+            // 
+            this.label204.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label204.Location = new System.Drawing.Point(3, 139);
+            this.label204.Name = "label204";
+            this.label204.Size = new System.Drawing.Size(571, 23);
+            this.label204.TabIndex = 8;
+            this.label204.Text = "Экономический эффект от использования разрабатываемой системы, руб.";
+            this.label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelEconomicEffectResult
+            // 
+            this.LabelEconomicEffectResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelEconomicEffectResult.Location = new System.Drawing.Point(584, 139);
+            this.LabelEconomicEffectResult.Name = "LabelEconomicEffectResult";
+            this.LabelEconomicEffectResult.Size = new System.Drawing.Size(378, 23);
+            this.LabelEconomicEffectResult.TabIndex = 9;
+            this.LabelEconomicEffectResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ButtonEconomicEffectCalculate
+            // 
+            this.ButtonEconomicEffectCalculate.Location = new System.Drawing.Point(3, 412);
+            this.ButtonEconomicEffectCalculate.Name = "ButtonEconomicEffectCalculate";
+            this.ButtonEconomicEffectCalculate.Size = new System.Drawing.Size(967, 41);
+            this.ButtonEconomicEffectCalculate.TabIndex = 10;
+            this.ButtonEconomicEffectCalculate.Text = "Посчитать";
+            this.ButtonEconomicEffectCalculate.UseVisualStyleBackColor = true;
+            // 
+            // label206
+            // 
+            this.label206.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label206.Location = new System.Drawing.Point(3, 9);
+            this.label206.Name = "label206";
+            this.label206.Size = new System.Drawing.Size(362, 23);
+            this.label206.TabIndex = 1;
+            this.label206.Text = "Нормативный коэффициент эффективности капитальных вложений";
+            this.label206.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextInvestmentRatio
+            // 
+            this.TextInvestmentRatio.Location = new System.Drawing.Point(371, 11);
+            this.TextInvestmentRatio.Name = "TextInvestmentRatio";
+            this.TextInvestmentRatio.Size = new System.Drawing.Size(100, 20);
+            this.TextInvestmentRatio.TabIndex = 2;
+            this.TextInvestmentRatio.Text = "0,33";
+            // 
+            // panel18
+            // 
+            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.label205);
+            this.panel18.Controls.Add(this.TableTeoResult);
+            this.panel18.Location = new System.Drawing.Point(3, 211);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(967, 195);
+            this.panel18.TabIndex = 3;
+            // 
+            // TableTeoResult
+            // 
+            this.TableTeoResult.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.TableTeoResult.ColumnCount = 2;
+            this.TableTeoResult.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableTeoResult.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TableTeoResult.Controls.Add(this.label218, 1, 5);
+            this.TableTeoResult.Controls.Add(this.label217, 0, 5);
+            this.TableTeoResult.Controls.Add(this.label216, 1, 4);
+            this.TableTeoResult.Controls.Add(this.label215, 0, 4);
+            this.TableTeoResult.Controls.Add(this.label214, 1, 3);
+            this.TableTeoResult.Controls.Add(this.label213, 0, 3);
+            this.TableTeoResult.Controls.Add(this.label212, 1, 2);
+            this.TableTeoResult.Controls.Add(this.label211, 0, 2);
+            this.TableTeoResult.Controls.Add(this.label210, 1, 1);
+            this.TableTeoResult.Controls.Add(this.label209, 0, 1);
+            this.TableTeoResult.Controls.Add(this.label208, 1, 0);
+            this.TableTeoResult.Controls.Add(this.label207, 0, 0);
+            this.TableTeoResult.Location = new System.Drawing.Point(3, 26);
+            this.TableTeoResult.Name = "TableTeoResult";
+            this.TableTeoResult.RowCount = 6;
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TableTeoResult.Size = new System.Drawing.Size(959, 164);
+            this.TableTeoResult.TabIndex = 0;
+            // 
+            // label205
+            // 
+            this.label205.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label205.Location = new System.Drawing.Point(-1, 0);
+            this.label205.Name = "label205";
+            this.label205.Size = new System.Drawing.Size(967, 23);
+            this.label205.TabIndex = 8;
+            this.label205.Text = "Результаты экономического обоснования проекта";
+            this.label205.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label207
+            // 
+            this.label207.AutoSize = true;
+            this.label207.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label207.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label207.Location = new System.Drawing.Point(4, 1);
+            this.label207.Name = "label207";
+            this.label207.Size = new System.Drawing.Size(472, 26);
+            this.label207.TabIndex = 0;
+            this.label207.Text = "Характеристика проекта";
+            this.label207.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label208
+            // 
+            this.label208.AutoSize = true;
+            this.label208.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label208.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label208.Location = new System.Drawing.Point(483, 1);
+            this.label208.Name = "label208";
+            this.label208.Size = new System.Drawing.Size(472, 26);
+            this.label208.TabIndex = 1;
+            this.label208.Text = "Значение";
+            this.label208.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label209
+            // 
+            this.label209.AutoSize = true;
+            this.label209.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label209.Location = new System.Drawing.Point(4, 28);
+            this.label209.Name = "label209";
+            this.label209.Size = new System.Drawing.Size(472, 26);
+            this.label209.TabIndex = 2;
+            this.label209.Text = "Затраты на разработку и внедрение проекта, руб.";
+            this.label209.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label210
+            // 
+            this.label210.AutoSize = true;
+            this.label210.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label210.Location = new System.Drawing.Point(483, 28);
+            this.label210.Name = "label210";
+            this.label210.Size = new System.Drawing.Size(472, 26);
+            this.label210.TabIndex = 3;
+            this.label210.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label211
+            // 
+            this.label211.AutoSize = true;
+            this.label211.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label211.Location = new System.Drawing.Point(4, 55);
+            this.label211.Name = "label211";
+            this.label211.Size = new System.Drawing.Size(472, 26);
+            this.label211.TabIndex = 4;
+            this.label211.Text = "Общие эксплуатационные затраты, руб.";
+            this.label211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label212
+            // 
+            this.label212.AutoSize = true;
+            this.label212.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label212.Location = new System.Drawing.Point(483, 55);
+            this.label212.Name = "label212";
+            this.label212.Size = new System.Drawing.Size(472, 26);
+            this.label212.TabIndex = 5;
+            this.label212.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label213
+            // 
+            this.label213.AutoSize = true;
+            this.label213.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label213.Location = new System.Drawing.Point(4, 82);
+            this.label213.Name = "label213";
+            this.label213.Size = new System.Drawing.Size(472, 26);
+            this.label213.TabIndex = 6;
+            this.label213.Text = "Экономический эффект, руб.";
+            this.label213.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label214
+            // 
+            this.label214.AutoSize = true;
+            this.label214.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label214.Location = new System.Drawing.Point(483, 82);
+            this.label214.Name = "label214";
+            this.label214.Size = new System.Drawing.Size(472, 26);
+            this.label214.TabIndex = 7;
+            this.label214.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label215
+            // 
+            this.label215.AutoSize = true;
+            this.label215.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label215.Location = new System.Drawing.Point(4, 109);
+            this.label215.Name = "label215";
+            this.label215.Size = new System.Drawing.Size(472, 26);
+            this.label215.TabIndex = 8;
+            this.label215.Text = "Коэффициент экономической эффективности";
+            this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label216
+            // 
+            this.label216.AutoSize = true;
+            this.label216.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label216.Location = new System.Drawing.Point(483, 109);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(472, 26);
+            this.label216.TabIndex = 9;
+            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label217
+            // 
+            this.label217.AutoSize = true;
+            this.label217.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label217.Location = new System.Drawing.Point(4, 136);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(472, 27);
+            this.label217.TabIndex = 10;
+            this.label217.Text = "Срок окупаемости, лет";
+            this.label217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label218
+            // 
+            this.label218.AutoSize = true;
+            this.label218.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label218.Location = new System.Drawing.Point(483, 136);
+            this.label218.Name = "label218";
+            this.label218.Size = new System.Drawing.Size(472, 27);
+            this.label218.TabIndex = 11;
+            this.label218.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LabelResultMessage
+            // 
+            this.LabelResultMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelResultMessage.Location = new System.Drawing.Point(3, 456);
+            this.LabelResultMessage.Name = "LabelResultMessage";
+            this.LabelResultMessage.Size = new System.Drawing.Size(967, 116);
+            this.LabelResultMessage.TabIndex = 11;
+            this.LabelResultMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -5303,22 +5774,31 @@
             this.TableBasicSalary.ResumeLayout(false);
             this.TableBasicSalary.PerformLayout();
             this.TabOperatingCosts.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.TableAnnualOperatingCosts.ResumeLayout(false);
+            this.TableAnnualOperatingCosts.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericEquipmentPiecesNumber)).EndInit();
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.NumericWorkDays)).EndInit();
             this.TableOurOperatingCosts.ResumeLayout(false);
             this.TableOurOperatingCosts.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.TableAnalogueOperatingCosts.ResumeLayout(false);
             this.TableAnalogueOperatingCosts.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.TableAnnualOperatingCosts.ResumeLayout(false);
-            this.TableAnnualOperatingCosts.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericEquipmentPiecesNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericWorkDays)).EndInit();
+            this.TabEconomicEfficiency.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.TableEconomicEffect.ResumeLayout(false);
+            this.TableEconomicEffect.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.TableTeoResult.ResumeLayout(false);
+            this.TableTeoResult.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5733,6 +6213,43 @@
         private System.Windows.Forms.Label label191;
         private System.Windows.Forms.Button ButtonAnnualOperatingCostsCalculate;
         private System.Windows.Forms.NumericUpDown NumericEquipmentPiecesNumber;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.TableLayoutPanel TableEconomicEffect;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.Label label203;
+        private System.Windows.Forms.Label label202;
+        private System.Windows.Forms.Label label201;
+        private System.Windows.Forms.Label label200;
+        private System.Windows.Forms.Label label199;
+        private System.Windows.Forms.Label label198;
+        private System.Windows.Forms.Label label197;
+        private System.Windows.Forms.Label label196;
+        private System.Windows.Forms.Label label195;
+        private System.Windows.Forms.Label label194;
+        private System.Windows.Forms.Label label193;
+        private System.Windows.Forms.Label label192;
+        private System.Windows.Forms.Label LabelEconomicEffectResult;
+        private System.Windows.Forms.Label label204;
+        private System.Windows.Forms.Button ButtonEconomicEffectCalculate;
+        private System.Windows.Forms.Label label206;
+        private System.Windows.Forms.TextBox TextInvestmentRatio;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Label label205;
+        private System.Windows.Forms.TableLayoutPanel TableTeoResult;
+        private System.Windows.Forms.Label label218;
+        private System.Windows.Forms.Label label217;
+        private System.Windows.Forms.Label label216;
+        private System.Windows.Forms.Label label215;
+        private System.Windows.Forms.Label label214;
+        private System.Windows.Forms.Label label213;
+        private System.Windows.Forms.Label label212;
+        private System.Windows.Forms.Label label211;
+        private System.Windows.Forms.Label label210;
+        private System.Windows.Forms.Label label209;
+        private System.Windows.Forms.Label label208;
+        private System.Windows.Forms.Label label207;
+        private System.Windows.Forms.Label LabelResultMessage;
     }
 }
 
